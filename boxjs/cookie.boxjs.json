@@ -3,7 +3,7 @@
   "name": "moicookie",
   "author": "wwg135",
   "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/moi.jpg",
-  "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
+  "repo": "https://github.com/wwg135/Surge/master/boxjs",
   "apps": [
     {
       "id": "airport",
