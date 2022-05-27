@@ -28,8 +28,20 @@ DOMAIN,ad.mobile.youku.com
 DOMAIN,iyes.youku.com
 DOMAIN,pl.cp31.ott.cibntv.net
 # > AMap
+DOMAIN-SUFFIX,adiu.amap.com
+DOMAIN,aboard.apilocate.amap.com
+DOMAIN,apiinit.amap.com
+DOMAIN,icloud-amap.com
+DOMAIN,logs.amap.com
+DOMAIN-SUFFIX,dualstack-logs.amap.com
+DOMAIN-SUFFIX,logs.amap.com
+DOMAIN-SUFFIX,optimus-ads.amap.com
+DOMAIN-SUFFIX,page.amap.com
 DOMAIN,optimus-ads.amap.com
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com
+DOMAIN-SUFFIX, shouji.sougou.com
+DOMAIN,u51.me
+DOMAIN-SUFFIX,u51.me
 # ------
 # > Autohome
 DOMAIN,adproxy.autohome.com.cn
