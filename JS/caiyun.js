@@ -13,11 +13,11 @@ TODO:
 配置：
 1️⃣ 配置自动定位
 添加如下配置
-Quantumult X
+Surge
 [MITM]
 hostname=weather-data.apple.com, api.weather.com
-[rewrite_local]
-https:\/\/((weather-data\.apple)|(api.weather))\.com url script-request-header https://raw.githubusercontent.com/wwg135/Quantumult-X/Quantumult-X/caiyun.js
+[Script]
+type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
 2️⃣ 打开手机设置 > 隐私 > 定位服务
 (1) 打开定位服务
 (2) 选择天气，设置永远允许天气访问位置信息，并允许使用精确位置。
