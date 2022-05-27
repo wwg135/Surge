@@ -320,6 +320,9 @@ DOMAIN,pgdt.gtimg.com
 DOMAIN,pgdt.ugdtimg.com
 DOMAIN,splashqqlive.gtimg.com
 DOMAIN,wa.gtimg.com
+DOMAIN,safebrowsing.urlsec.qq.com
+DOMAIN-SUFFIX,oth.str.mdt.qq.com
+DOMAIN,vv.video.qq.com
 # DOMAIN,wxsnsdy.wxs.qq.com
 # DOMAIN,wxsnsdythumb.wxs.qq.com
 # > Tencent Music (TME)
