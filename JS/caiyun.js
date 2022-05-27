@@ -1,5 +1,5 @@
 /**
-彩云天气 v1.1.0
+彩云天气 v1.2.0
 @author: wwg135     更新时间：2022.05.27 11:06
 更新地址：https://raw.githubusercontent.com/wwg135/Quantumult-X/Quantumult-X/caiyun.js
  *
@@ -17,7 +17,7 @@ Surge
 [MITM]
 hostname=weather-data.apple.com, api.weather.com
 [Script]
-type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
+type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/caiyun.js, require-body=false
 2️⃣ 打开手机设置 > 隐私 > 定位服务
 (1) 打开定位服务
 (2) 选择天气，设置永远允许天气访问位置信息，并允许使用精确位置。
