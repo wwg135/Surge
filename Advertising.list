@@ -228,11 +228,6 @@ DOMAIN-SUFFIX,ads2.msn.com
 DOMAIN-SUFFIX,bingads.microsoft.com
 DOMAIN-SUFFIX,rads.msn.com
 DOMAIN,mobileads.msn.com
-# > MojiWeather
-DOMAIN,ad.api.moji.com
-DOMAIN,adlaunch.moji.com
-DOMAIN,ads.mojicdn.com
-DOMAIN,v1.log.moji.com
 # > MiguVideo
 DOMAIN-SUFFIX,ad.cmvideo.cn
 DOMAIN,ggc.cmvideo.cn
@@ -285,15 +280,6 @@ DOMAIN,ivy.pchouse.com.cn
 DOMAIN-SUFFIX,deliver.ifeng.com
 DOMAIN,api.newad.ifeng.com
 DOMAIN,ifengad.3g.ifeng.com
-
-# (Q)
-# > QingTing
-DOMAIN,ad.qingting.fm
-DOMAIN,adlaunch.qingting.fm
-DOMAIN,ad-cdn.qingting.fm
-# > OPPO
-DOMAIN-SUFFIX,ads.oppomobile.com
-DOMAIN,adsfs.oppomobile.com
 
 # (S)
 # > Sina
@@ -352,13 +338,6 @@ DOMAIN,mobilead.kuwo.cn
 DOMAIN,rich.kuwo.cn
 DOMAIN,tmead.y.qq.com
 # ------
-# > TongHuaShun
-DOMAIN,adm.10jqka.com.cn
-DOMAIN,stat.10jqka.com.cn
-# > The Paper
-DOMAIN,admonitor.thepaper.cn
-DOMAIN,adpai.thepaper.cn
-DOMAIN,imgadpai.thepaper.cn
 # > Thunder
 DOMAIN,adsp.xunlei.com
 DOMAIN,etl.xlmc.sandai.net
@@ -368,36 +347,10 @@ DOMAIN,etl.xlmc.sandai.net
 DOMAIN,adv-adlog.variflight.com
 DOMAIN,adv-ads.variflight.com
 DOMAIN,app-ad.variflight.com
-# > vivo
-DOMAIN,adlog.vivo.com.cn
-DOMAIN,adreq.vivo.com.cn
-DOMAIN,ads-marketing-vivofs.vivo.com.cn
-DOMAIN,adsdk.vivo.com.cn
-DOMAIN,adsstatic.vivo.com.cn
-DOMAIN,adxlog.vivo.com.cn
-DOMAIN,vcardsdkservice.vivo.com.cn
-DOMAIN-KEYWORD,stsdk.vivo.com.cn
-DOMAIN-KEYWORD,stsdk.vivoglobal.com
 # > Viber
 DOMAIN,ads.viber.com
 DOMAIN,ads-d.viber.com
 DOMAIN,ads.aws.viber.com
-
-# (X)
-# > Ximalaya
-DOMAIN,ad.ximalaya.com
-DOMAIN,adbs.ximalaya.com
-DOMAIN,adse.ximalaya.com
-DOMAIN,adse.wsa.ximalaya.com
-DOMAIN,adbehavior.wsa.ximalaya.com
-DOMAIN,adbehavior.ximalaya.com
-DOMAIN,adsebs.ximalaya.com
-DOMAIN,adwbs.ximalaya.com
-# > Xiaohongshu
-DOMAIN,ads-img-qc.xhscdn.com
-DOMAIN,ads-video-al.xhscdn.com
-DOMAIN,ads-video-qc.xhscdn.com
-DOMAIN,t-ads.xiaohongshu.com
 
 # (Y)
 # > Yahoo
