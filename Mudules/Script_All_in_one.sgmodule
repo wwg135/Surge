@@ -95,6 +95,8 @@ Kuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.c
 小小影视 = type=http-response,pattern=https:\/\/.*\/getGlobalData,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/xxysad.js,script-update-interval=0
 # > 爱美剧Vip (by huihui）(官网：app.meiju2018.com)
 aimeiju.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/aimeiju.js,type=http-response,pattern=^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index)
+# > 百度云
+BaiduCloud.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user
 # > WPS (By eHpo)
 Wps.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,type=http-response,pattern=^https://account.wps.*/api/users/
 # 彩云天气 Vip
@@ -109,4 +111,4 @@ zgtyzb.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent
 rrtv.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, api.rr.tv, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com, rest.zhibo.tv, 
+hostname = %APPEND% api.m.jd.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, pan.baidu.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, api.rr.tv, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com, rest.zhibo.tv, 
