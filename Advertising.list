@@ -138,10 +138,6 @@ DOMAIN,adshows.21cn.com
 # > Chelaile
 DOMAIN,atrace.chelaile.net.cn
 DOMAIN,logs.chelaile.net.cn
-# > Camera360
-DOMAIN,dispatcher.360in.com
-DOMAIN,ad.360in.com
-DOMAIN,exp.360in.com
 
 # (D)
 # > Douban
@@ -149,11 +145,28 @@ AND,((USER-AGENT,Frodo*), (DOMAIN,119.29.29.29))
 
 # (G)
 # > Google
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN,safebrowsing.googleapis.com
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,googleadsserving.cn
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,video-ad-stats.googlesyndication.com
+DOMAIN-SUFFIX,tpc.googlesyndication.com
+DOMAIN-SUFFIX,pagead.google.com
+DOMAIN-SUFFIX,pagead.l.google.com
+DOMAIN-SUFFIX,pagead2.googlesyndication.com
+DOMAIN-SUFFIX,pagead-tpc.l.google.com
+DOMAIN-SUFFIX,mobileads.google.com
+DOMAIN-SUFFIX,googlecommerce.com
+DOMAIN-SUFFIX,blaaaa12.googlecode.com
+DOMAIN-SUFFIX,badad.googleplex.com
+DOMAIN-SUFFIX,afs.googlesyndication.com
+DOMAIN-SUFFIX,afd.l.google.com
+DOMAIN-SUFFIX,www.googleadservices.com
+DOMAIN-SUFFIX,www.google-analytics.com
 DOMAIN,ads.youtube.com
 
 # (H)
