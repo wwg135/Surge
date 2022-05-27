@@ -1,0 +1,244 @@
+{
+  "id": "moi",
+  "name": "moicookie",
+  "author": "@moi",
+  "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/moi.jpg",
+  "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
+  "apps": [
+    {
+      "id": "bwg",
+      "name": "搬瓦工api设置",
+      "keys": [],
+      "settings": [
+        {
+          "id": "bwgid",
+          "name": "搬瓦工id",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "123456",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入搬瓦工api的id"
+        },
+        {
+          "id": "bwgkey",
+          "name": "搬瓦工key",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "abcdefgh",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入搬瓦工api的key"
+        }
+      ],
+      "author": "@moi",
+      "repo": "https://github.com/smartmimi/conf/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/surge/bwg_data.js",
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"]
+    },
+    {
+      "id": "airport",
+      "name": "机场流量",
+      "keys": [],
+      "settings": [
+        {
+          "id": "airport_url",
+          "name": "订阅链接",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "http://XXXX",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入订阅链接"
+        },
+        {
+          "id": "airport_title",
+          "name": "标题",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "浦东机场",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入机场名称"
+        },
+        {
+          "id": "airport_rest_day",
+          "name": "重置时间",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "3",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入下一次重置的时间（几号），可选"
+        },
+        {
+          "id": "airport_expire",
+          "name": "套餐到期日期",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "yyyy-MM-dd",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入套餐到期日期，可选"
+        },
+        {
+          "id": "airport_icon",
+          "name": "图标",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "airplane.circle",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入图标名称，可选"
+        },
+        {
+          "id": "airport_color",
+          "name": "图标颜色",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "#007aff",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入图标颜色，可选"
+        }
+      ],
+      "author": "@moi",
+      "repo": "https://github.com/smartmimi/conf/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/surge/sub_info_panel.js",
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/caiji.png","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/caiji.png"]
+    },
+    {
+      "id": "covid1",
+      "name": "疫情查询区域",
+      "keys": [],
+      "settings": [
+        {
+          "id": "covid19area",
+          "name": "区域",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "按格式输入查询的区域"
+        }
+      ],
+      "author": "@moi",
+      "repo": "https://github.com/smartmimi/conf/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/surge/covid19.js",
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/health.png","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/health.png"]
+    },
+    {
+      "id": "nekoneko",
+      "name": "nekoneko用量查询",
+      "keys": [],
+      "settings": [
+        {
+          "id": "nekoneko_key",
+          "name": "key",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入key"
+        }
+      ],
+      "author": "@moi",
+      "repo": "https://github.com/smartmimi/conf/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/surge/nekoneko.js",
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/neko.png","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/neko.png"]
+    },
+    {
+      "id": "weekly_note",
+      "name": "每周信息展示",
+      "keys": [],
+      "settings": [
+        {
+          "id": "weekly_notes_title",
+          "name": "信息标题",
+          "val": "每周信息展示",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入标题"
+        },
+                {
+          "id": "weekly_notes_1",
+          "name": "周一",
+          "val": "未填写数据",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入周一内容"
+        },
+                {
+          "id": "weekly_notes_2",
+          "name": "周二",
+          "val": "未填写数据",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入周二内容"
+        },
+                {
+          "id": "weekly_notes_3",
+          "name": "周三",
+          "val": "未填写数据",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入周三内容"
+        },
+                {
+          "id": "weekly_notes_4",
+          "name": "周四",
+          "val": "未填写数据",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入周四内容"
+        },
+                {
+          "id": "weekly_notes_5",
+          "name": "周五",
+          "val": "未填写数据",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入周五内容"
+        },
+                {
+          "id": "weekly_notes_6",
+          "name": "周六",
+          "val": "未填写数据",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入周六内容"
+        },
+                {
+          "id": "weekly_notes_0",
+          "name": "周日",
+          "val": "未填写数据",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入周日内容"
+        }
+      ],
+      "author": "@moi",
+      "repo": "https://github.com/smartmimi/conf/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/surge/nekoneko.js",
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/weekly_notes.jpg","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/weekly_notes.jpg"]
+    }
+  ]
+}
