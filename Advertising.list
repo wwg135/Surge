@@ -296,6 +296,26 @@ DOMAIN-SUFFIX,ad.sohu.com
 DOMAIN-SUFFIX,ads.sohu.com
 DOMAIN-SUFFIX,aty.sohu.com
 DOMAIN,hui.sohu.com
+# > Sougou
+DOMAIN, indivi-cdn.shouji.sogou.com/wapdl/hole
+DOMAIN-SUFFIX,epro.sogou.com
+DOMAIN-SUFFIX,golden1.sogou.com
+DOMAIN-SUFFIX,inte.sogou.com
+DOMAIN-SUFFIX,inte.sogoucdn.com
+DOMAIN-SUFFIX,lu.sogoucdn.com
+DOMAIN-SUFFIX,theta.sogoucdn.com
+DOMAIN-SUFFIX,uranus.sogou.com
+DOMAIN-SUFFIX,123.sogou.com
+DOMAIN-SUFFIX,a1click.cpc.sogou.com
+DOMAIN-SUFFIX,adsence.sogou.com
+DOMAIN-SUFFIX,adstream.123.sogoucdn.com
+DOMAIN-SUFFIX,amfi.gou.sogou.com
+DOMAIN-SUFFIX,art.theta.sogoucdn.com
+DOMAIN-SUFFIX,athena.wan.sogou.com
+DOMAIN-SUFFIX,bazinga.mse.sogou.com
+DOMAIN-SUFFIX,bite.theta.sogoucdn.com
+DOMAIN-SUFFIX,brand.sogou.com
+DOMAIN-SUFFIX,bsiet.husky.sogou.com
 # > Snapchat
 DOMAIN,ads.snapchat.com
 DOMAIN,adsapi.snapchat.com
