@@ -24,6 +24,6 @@ net-info-panel = script-path=https://raw.githubusercontent.com/wwg135/Surge/main
 
 Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/sub_info_panel.js,script-update-interval=0
 
-疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/Covid19.js
+疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/COVID-19.js
 
 流量统计 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/trafficstatistics.js,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8&network=pdp_ip0
