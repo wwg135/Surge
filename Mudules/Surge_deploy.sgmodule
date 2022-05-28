@@ -102,6 +102,9 @@ RULE-SET,https://raw.githubusercontent.com/wwg135/Shadowrocket/main/Ruleset/Chin
 RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/ChinaIP.list,DIRECT
 # Local Area Network 局域网
 RULE-SET,LAN,DIRECT
+# GeoIP China
+GEOIP,CN,DIRECT
+FINAL,♻️ 自动选择,dns-failed
 
 # > 京东 去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
