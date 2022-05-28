@@ -1,5 +1,5 @@
 /*
-Surge配置参考注释，感谢@asukanana,感谢@congcong.修改自@mieqq大佬的脚本https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js
+Surge配置参考注释
 
 boxjs中添加订阅https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/cookie.boxjs.json
 示例↓↓↓ 
