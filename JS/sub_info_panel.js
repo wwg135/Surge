@@ -1,7 +1,7 @@
 /*
 Surge配置参考注释
 
-boxjs中添加订阅https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/cookie.boxjs.json
+boxjs中添加订阅https://raw.githubusercontent.com/wwg135/Surge/main/boxjs/cookie.boxjs.json
 示例↓↓↓ 
 ----------------------------------------
 [Script]
