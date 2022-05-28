@@ -1,9 +1,11 @@
-#!name=Script - All in one . By wwg135
+#!name=Script - All in one + BoxJs  By wwg135
 #!desc=该模块为脚本合集,用于Remove Ads + unlock vip
 #!system=ios
 [General]
 # > 优酷 去广告
 force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
+# > BoxJs
+force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
 
 [Rule]
 # > 京东  去启动广告
@@ -53,6 +55,9 @@ URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ads/index,REJECT-TINYGIF
 https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=6131333537653261363463323331666265663763396239663835636662373930
 
 [Script]
+# > BoxJs
+Rewrite: BoxJs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+# > 百度vip
 http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
 # > yichahucha
 # > 京东比价
