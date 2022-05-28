@@ -3,6 +3,8 @@
 #!system=ios
 [General]
 hide-vpn-icon=true
+# > 跳过部分应用的代理检测
+skip-proxy = %APPEND% www.baidu.com,openapi.5g.gmcc.net,*.gmcc.net,gd.10086.cn,yunbusiness.ccb.com,www.apple.com
 # > 优酷 去广告
 force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 # > BoxJs
@@ -22,7 +24,6 @@ URL-REGEX,^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier),REJECT-TINYGIF
 DOMAIN,appcloud2.zhihu.com,REJECT
 //DO NOT GET CDN-BASED IP
 DOMAIN,118.89.204.198,REJECT
-
 USER-AGENT,AVOS*,REJECT
 URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT
 AND,((USER-AGENT,ZhihuHybrid*), (URL-REGEX,.*recommend)),REJECT
