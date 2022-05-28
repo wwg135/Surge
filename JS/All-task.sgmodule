@@ -10,7 +10,7 @@ hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, passport.iqiyi.co
 取关店铺商品 = type=cron,cronexp=40 8-23/5 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_unsubscribe.js,script-update-interval=0
 京喜财富岛 = type=cron,cronexp=15 8-23/5 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/jd_cfd.js,script-update-interval=0
 清空购物车 = type=cron,cronexp=35 12,23 * * *,wake-system=1,timeout=120,script-path=http://gjds.vip/QX/quantumutilx/jd_cleancart.js,script-update-interval=0
-爱奇艺签到 = type=cron,cronexp=30 9 * * *,timeout=120,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,wake-system=1,script-update-interval=0
+爱奇艺签到 = type=cron,cronexp=30 9 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,wake-system=1,script-update-interval=0
 京东CK检查 = type=cron,cronexp=0 9,21 * * *,wake-system=1,timeout=120,script-path=http://gjds.vip/QX/quantumutilx/jd_cookie_search.js,script-update-interval=0
 京东物流派件提醒 = type=cron,cronexp=0 12 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js,script-update-interval=0
 京东极速版签到 = type=cron,cronexp=0 7,19 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_speed_sign.js,script-update-interval=0
