@@ -15,7 +15,7 @@ Sub_info = script-name=Sub_info,update-interval=-1
 
 net-info-panel=title="网络状态",content="请刷新",style=info,script-name=net-info-panel
 
-网络信息 = script-name=网络信息,title=网络信息,content=请刷新,style=info,update-interval=1
+#网络信息 = script-name=网络信息,title=网络信息,content=请刷新,style=info,update-interval=1
 
 [Script]
 function_timeTransform = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/function_timeTransform.js
@@ -32,4 +32,4 @@ Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 net-info-panel = script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Panel/Net-info-panel.js,type=generic,script-update-interval=0
 
 #ip-api.com（规则所选策略）
-网络信息 = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/ipcheck.js
+#网络信息 = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/ipcheck.js
