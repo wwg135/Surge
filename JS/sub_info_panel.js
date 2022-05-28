@@ -5,7 +5,7 @@ boxjs中添加订阅https://raw.githubusercontent.com/smartmimi/conf/master/boxj
 示例↓↓↓ 
 ----------------------------------------
 [Script]
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/sub_info_panel.js,script-update-interval=0
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/sub_info_panel.js,script-update-interval=0
 [Panel]
 Sub_info = script-name=Sub_info
 
