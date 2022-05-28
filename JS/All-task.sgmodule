@@ -2,6 +2,9 @@
 #!desc=本模块集合本人自用的定时脚本任务,谨慎选择
 #!system=ios
 
+[MITM]
+hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, passport.iqiyi.com, weather-data.apple.com, api.weather.com, wq.jd.com, m.jingxi.com, m.jd.com,
+
 [Script]
 彩云天气 = type=cron,cronexp=0 7-23/2 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/caiyun.js,script-update-interval=0
 取关店铺商品 = type=cron,cronexp=40 8-23/5 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_unsubscribe.js,script-update-interval=0
