@@ -31,7 +31,7 @@ $httpClient.get(url, function(error, response, data){
      $done({
        title:"COVID-19",
        icon:"facemask.fill",
-       "icon-color":"#FF0000",
+       "icon-color":"#FFFF00",
        content: ala.replace(/\n$/, ""),
      });
     }
