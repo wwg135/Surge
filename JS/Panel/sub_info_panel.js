@@ -58,8 +58,8 @@ let args = getArgs();
   $done({
     title: `${args.title} | ⏰：${hour}:${minutes}:${seconds}`,
     content: content.join("\n"),
-    icon: args.icon || "airplane.departure",
-    "icon-color": args.color || "#ff00ff",
+    icon: "airplane.departure",
+    "icon-color": "#ff00ff",
   });
 })();
 
