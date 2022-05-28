@@ -21,46 +21,58 @@ Sub_info = script-name=Sub_info
 */
 
 (async () => {
-  let sub_title = $persistentStore.read("airport_title");
-  let resetDay = parseInt($persistentStore.read("airport_rest_day") );
-  let resetLeft = getRmainingDays(resetDay);
-  let urlcode = $persistentStore.read("airport_url");
-  let usage = await getDataUsage(urlcode);
-  let used = usage.download + usage.upload;
-  let total = usage.total;
-  let expire = usage.expire || $persistentStore.read("airport_expire");
-  //let prec = precent(used,total);
-  //let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n${prec}`];
-  let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}`];
+  let args = getArgs();
+  let info = await getDataInfo(args.url);
+  if (!info) $done();
+  let resetDayLeft = getRmainingDays(parseInt(args["reset_day"]));
 
-  if (resetLeft) {
-    infoList.push(`重置：剩余${resetLeft}天`);
+  let used = info.download + info.upload;
+  let total = info.total;
+  let expire = args.expire || info.expire;
+  let content = [`Used: ${bytesToSize(used)}｜Reset: ${resetDayLeft} Days`];
+
+/*
+  if (resetDayLeft) {
+    content.push(`重置：剩余${resetDayLeft}天`);
   }
   if (expire) {
-    if (/^[\d]+$/.test(expire)) expire *= 1000;
-    infoList.push(`到期：${formatTime(expire)}`);
+    if (/^[\d.]+$/.test(expire)) expire *= 1000;
+    content.push(`到期：${formatTime(expire)}`);
   }
+*/
+  let now = new Date();
+  let hour = now.getHours();
+  let minutes = now.getMinutes();
+  hour = hour > 9 ? hour : "0" + hour;
+  minutes = minutes > 9 ? minutes : "0" + minutes;
 
-  let body = infoList.join("\n");
   $done({
-	title:  sub_title+ "   "+nowtime(),
-	content: body,
-        icon : $persistentStore.read("airport_icon") ||"externaldrive.connected.to.line.below",
-        "icon-color" :$persistentStore.read("airport_color") || "#007aff"
-	});
+    title: `${args.title}`,
+    content: content.join("\n"),
+    icon: args.icon || "airplane.circle",
+    "icon-color": args.color || "#007aff",
+  });
 })();
 
+function getArgs() {
+  return Object.fromEntries(
+    $argument
+      .split("&")
+      .map((item) => item.split("="))
+      .map(([k, v]) => [k, decodeURIComponent(v)])
+  );
+}
 
 function getUserInfo(url) {
   let request = { headers: { "User-Agent": "Quantumult%20X" }, url };
   return new Promise((resolve, reject) =>
-    $httpClient.head(request, (err, resp) => {
+    $httpClient.get(request, (err, resp) => {
       if (err != null) {
         reject(err);
         return;
       }
       if (resp.status !== 200) {
-        reject("Not Available");
+        reject(resp.status);
         return;
       }
       let header = Object.keys(resp.headers).find(
@@ -75,7 +87,7 @@ function getUserInfo(url) {
   );
 }
 
-async function getDataUsage(url) {
+async function getDataInfo(url) {
   const [err, data] = await getUserInfo(url)
     .then((data) => [null, data])
     .catch((err) => [err, null]);
@@ -88,29 +100,26 @@ async function getDataUsage(url) {
     data
       .match(/\w+=[\d.eE+]+/g)
       .map((item) => item.split("="))
-      .map(([k, v]) => [k, parseInt(v)])
+      .map(([k, v]) => [k, Number(v)])
   );
 }
 
 function getRmainingDays(resetDay) {
   if (!resetDay) return;
+
   let now = new Date();
   let today = now.getDate();
   let month = now.getMonth();
   let year = now.getFullYear();
   let daysInMonth;
+
   if (resetDay > today) {
     daysInMonth = 0;
   } else {
     daysInMonth = new Date(year, month + 1, 0).getDate();
   }
-  return daysInMonth - today + resetDay;
-}
 
-function nowtime(){
- let now = new Date();
- let time = now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
- return time
+  return daysInMonth - today + resetDay;
 }
 
 function bytesToSize(bytes) {
@@ -127,17 +136,4 @@ function formatTime(time) {
   let month = dateObj.getMonth() + 1;
   let day = dateObj.getDate();
   return year + "年" + month + "月" + day + "日";
-}
-
-function precent(res,total){
-  let num = Number(((res / total)*10).toFixed(0));
-  let precentprint = '';
-  for (var i =1;i<=10;i++){
-    if (i <= num) {
-      precentprint += '🔴';
-    }else{
-      precentprint += '🟢';
-    }
-  };
-  return precentprint;
 }
