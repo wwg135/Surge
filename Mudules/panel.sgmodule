@@ -22,7 +22,7 @@ net-info-panel = script-path=https://raw.githubusercontent.com/wwg135/Surge/main
 
 节假日提醒 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/timecard.js
 
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/sub_info_panel.js,script-update-interval=0
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/sub_info_panel.js,script-update-interval=0
 
 疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/COVID-19.js
 
