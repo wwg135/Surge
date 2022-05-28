@@ -59,7 +59,7 @@ let args = getArgs();
     title: `${args.title} | ⏰：${hour}:${minutes}:${seconds}`,
     content: content.join("\n"),
     icon: args.icon || "airplane.departure",
-    "icon-color": args.color || "#007aff",
+    "icon-color": args.color || "#ff00ff",
   });
 })();
 
