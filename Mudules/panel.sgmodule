@@ -5,25 +5,25 @@
 [Panel]
 function_timeTransform = script-name=function_timeTransform, title="Surge", content="请刷新", update-interval=60
 
-Sub_info = script-name=Sub_info,update-interval=-1
+net-info-panel=title="网络状态",content="请刷新",style=info,script-name=net-info-panel
 
 节假日提醒 = script-name=节假日提醒,update-interval=1
+
+Sub_info = script-name=Sub_info,update-interval=-1
 
 疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=1
 
 流量统计 = script-name=流量统计,update-interval=1
 
-net-info-panel=title="网络状态",content="请刷新",style=info,script-name=net-info-panel
-
 [Script]
 function_timeTransform = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/function_timeTransform.js
+
+net-info-panel = script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/net_info_penel.js,type=generic,script-update-interval=0
+
+节假日提醒 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/timecard.js
 
 Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/sub_info_panel.js,script-update-interval=0
 
 疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/Covid19.js
 
-节假日提醒 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/timecard.js
-
 流量统计 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/trafficstatistics.js,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8&network=pdp_ip0
-
-net-info-panel = script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/net_info_penel.js,type=generic,script-update-interval=0
