@@ -49,8 +49,8 @@ Sub_info = script-name=Sub_info
   $done({
     title: `${args.title}`,
     content: content.join("\n"),
-    icon: args.icon || "airplane.circle",
-    "icon-color": args.color || "#007aff",
+    icon: args.icon || "airplane.departure",
+    "icon-color": args.color || "#ff00ff",
   });
 })();
 
