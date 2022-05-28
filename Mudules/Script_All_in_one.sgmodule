@@ -1,4 +1,4 @@
-#!name=Script - All in one
+#!name=Script-All in one
 #!desc=该模块为脚本合集 更新时间：2022-05-28 13:43
 #!system=ios
 
@@ -78,10 +78,6 @@ WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=htt
 
 # > 腾讯新闻 去广告
 QQNews.js = requires-body=1,script-path=https://Choler.github.io/Surge/Script/QQNews.js,type=http-response,pattern=^https://r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList)
-# > 人人视频 去广告
-rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://Choler.github.io/Surge/Script/rrsp.js
-rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel$,script-path=https://Choler.github.io/Surge/Script/rrsp.js
-# > onewayticket255
 # > 知乎 去广告
 zhihu people = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/people/,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js
 zhihu feed = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
@@ -112,8 +108,6 @@ themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercont
 hanjuTV.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/hanjuTV.js,type=http-response,pattern=https\:\/\/hjapi\.bjxkhc\.com\/v2d2\/users\/.*\/member
 # > 中国体育直播unlock (By 军哥哥)
 zgtyzb.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/zgtyzb.js,type=http-response,pattern=http:\/\/rest\.zhibo\.tv\/room\/get\-room\-info\-v430
-# > 人人视频 解锁AI原画 (by@george Jiang & R)
-rrtv.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, pan.baidu.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, api.rr.tv, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com, rest.zhibo.tv, 
+hostname = %APPEND% api.m.jd.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, pan.baidu.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com, rest.zhibo.tv, 
