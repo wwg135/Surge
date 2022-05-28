@@ -58,7 +58,7 @@ let args = getArgs();
   $done({
     title: `${args.title} | ⏰：${hour}:${minutes}:${seconds}`,
     content: content.join("\n"),
-    icon: args.icon || "airplane.circle",
+    icon: args.icon || "airplane.departure",
     "icon-color": args.color || "#007aff",
   });
 })();
