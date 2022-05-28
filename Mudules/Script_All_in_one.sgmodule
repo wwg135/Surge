@@ -1,6 +1,7 @@
 #!name=Script - All in one
 #!desc=该模块为脚本合集 更新时间：2022-05-28 13:43
 #!system=ios
+
 [General]
 hide-vpn-icon=true
 # > 跳过部分应用的代理检测
