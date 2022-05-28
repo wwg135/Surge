@@ -12,7 +12,41 @@ force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
 
 [Rule]
-# > 京东  去启动广告
+AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
+# Client
+PROCESS-NAME,UUBooster,DIRECT
+# > Download
+PROCESS-NAME,aria2c,DIRECT
+PROCESS-NAME,fdm,DIRECT
+PROCESS-NAME,Folx,DIRECT
+PROCESS-NAME,NetTransport,DIRECT
+PROCESS-NAME,Thunder,DIRECT
+PROCESS-NAME,Transmission,DIRECT
+PROCESS-NAME,uTorrent,DIRECT
+PROCESS-NAME,WebTorrent,DIRECT
+PROCESS-NAME,WebTorrent Helper,DIRECT
+# Unbreak 后续规则修正
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/Unbreak.list,DIRECT
+# Advertising 广告
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/Advertising.list,REJECT
+# Privacy 隐私
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/Privacy.list,REJECT
+# Hijacking 运营商劫持或恶意网站
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/Hijacking.list,REJECT
+# Telegram
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/Telegram.list,♻️ 自动选择
+# Global 全球加速
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/Global.list,♻️ 自动选择
+# Apple 服务
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/Apple.list,DIRECT
+# China 中国直连
+RULE-SET,https://raw.githubusercontent.com/wwg135/Shadowrocket/main/Ruleset/China.list,DIRECT
+# China IP
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/ChinaIP.list,DIRECT
+# Local Area Network 局域网
+RULE-SET,LAN,DIRECT
+
+# > 京东 去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 # > 哔哩哔哩 去广告 
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
