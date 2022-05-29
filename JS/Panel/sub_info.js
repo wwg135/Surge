@@ -20,8 +20,8 @@ let args = getArgs();
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
-  
-  let content = [`使用:${toPercent(used)} | 总量:${bytesToSize(total)}`];
+  let proportion = used / total;
+  let content = [`𝗨𝘀𝗲𝗱 : ${toPercent(proportion)} | 𝗔𝘃𝗹 : ${bytesToSize(total-used)}`];
   if (resetDayLeft) {
     content.push(`剩余:${toPercent(total-used)} | 重置:剩余${resetDayLeft}天`);
   }
@@ -128,4 +128,9 @@ function formatTime(time) {
   let month = dateObj.getMonth() + 1;
   let day = dateObj.getDate();
   return year + "年" + month + "月" + day + "日";
+}
+
+function toPercent(proportion) {
+  const percent = Number(proportion*100).toFixed(2);
+  return percent + "%";
 }
