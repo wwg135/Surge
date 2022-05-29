@@ -1,12 +1,5 @@
 /*
-Surge配置参考注释.
-示例↓↓↓ 
-----------------------------------------
-[Script]
-Sub_info = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/sub_info.js,script-update-interval=0,argument=url=[URL encode 后的机场节点链接]&reset_day=4&expire=2023-05-03&title=𝓪𝓲𝓻𝓹𝓵𝓪𝓷𝓮&icon=airplane.departure&color=#ff00ff
-[Panel]
-Sub_info = script-name=Sub_info,update-interval=3600
-----------------------------------------
+
 先将带有流量信息的节点订阅链接encode，用encode后的链接替换"url="后面的[机场节点链接]
 （实在不会可以用这个捷径生成panel和脚本，https://www.icloud.com/shortcuts/3f24df391d594a73abd04ebdccd92584）
 可选参数 &reset_day，后面的数字替换成流量每月重置的日期，如1号就写1，8号就写8。如"&reset_day=8",不加该参数不显示流量重置信息。
