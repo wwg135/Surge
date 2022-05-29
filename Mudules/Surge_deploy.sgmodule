@@ -52,6 +52,9 @@ URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ads/index,REJECT-TINYGIF
 https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=6131333537653261363463323331666265663763396239663835636662373930
 
 [Script]
+# > 京东App 历史价格 
+京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/jd_price.js
+
 # > 百度vip
 http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
 
