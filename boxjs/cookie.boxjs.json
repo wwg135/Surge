@@ -3,7 +3,7 @@
   "name": "wwg135应用订阅",
   "author": "wwg135",
   "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/moi.jpg",
-  "repo": "https://github.com/wwg135/Surge/master/boxjs",
+  "repo": "https://github.com/wwg135/Surge/tree/main/boxjs",
   "apps": [
     {
       "id": "Caiyun",
