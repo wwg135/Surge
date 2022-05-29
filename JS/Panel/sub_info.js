@@ -8,8 +8,8 @@ let args = getArgs();
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
-  let proportion = used / total;
-  let content = [`𝗨𝘀𝗲𝗱 : ${toPercent(proportion)} | 𝗔𝘃𝗹 : ${bytesToSize(total-used)}`];
+  let prec = precent(used,total);
+  let content = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n${prec}`];
   if (resetDayLeft) {
     content.push(`重置:剩余${resetDayLeft}天`);
   }
