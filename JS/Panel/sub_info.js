@@ -119,7 +119,15 @@ function formatTime(time) {
   return year + "年" + month + "月" + day + "日";
 }
 
-function toPercent(proportion) {
-  const percent = Number(proportion*100).toFixed(2);
-  return percent + "%";
+function precent(res,total){
+  let num = Number(((res / total)*10).toFixed(0));
+  let precentprint = '';
+  for (var i =1;i<=10;i++){
+    if (i <= num) {
+      precentprint += '🔴';
+    }else{
+      precentprint += '🟢';
+    }
+  };
+  return precentprint;
 }
