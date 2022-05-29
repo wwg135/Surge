@@ -1,11 +1,11 @@
 #!name=Panel面板
-#!desc=通过panel显示及控制 更新时间：2022-05-29 09:38
+#!desc=通过panel显示及控制 更新时间：2022-05-29 16:06
 #!system=ios
 
 [Panel]
 function_timeTransform = script-name=function_timeTransform, title="Surge", content="请刷新", update-interval=60
 
-net-info-panel=title="网络状态",content="请刷新",style=info,script-name=net-info-panel
+net-info-panel=title="网络状态",content="请刷新",style=info,script-name=net-info-panel, update-interval=600
 
 节假日提醒 = script-name=节假日提醒,update-interval=1
 
