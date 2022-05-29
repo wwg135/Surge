@@ -9,7 +9,7 @@ let args = getArgs();
   let total = info.total;
   let expire = args.expire || info.expire;
   let proportion = used / total;
-  let content = [`𝗨𝘀𝗲𝗱 : ${toPercent(proportion)} | 𝗔𝘃𝗹 : ${bytesToSize(total-used)}`];
+  let content = [`𝗨𝘀𝗲𝗱 : ${toPercent(proportion)} | 𝗧𝗼𝘁𝗮𝗹 : ${bytesToSize(total)}`];
   if (resetDayLeft) {
     content.push(`𝗥𝗡:${toPercent(total-used)} | 𝗥𝗲𝘀𝗲𝘁:剩余${resetDayLeft}天`);
   }
