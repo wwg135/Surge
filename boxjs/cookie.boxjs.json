@@ -1,6 +1,6 @@
 {
   "id": "wwg135",
-  "name": "wwg135应用订阅2",
+  "name": "wwg135应用订阅",
   "author": "wwg135",
   "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/moi.jpg",
   "repo": "https://github.com/wwg135/Surge/master/boxjs",
@@ -132,7 +132,7 @@
       ],
       "author": "wwg135",
       "repo": "https://github.com/wwg135/Surge/master/boxjs",
-      "script": "https://github.com/smartmimi/conf/tree/master/surge/sub_info_panel.js",
+      "script": "https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/sub_info.js",
       "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/caiji.png","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/caiji.png"]
     },
     {
@@ -155,8 +155,8 @@
         }
       ],
       "author": "@whyour",
-      "repo": "https://github.com/whyour/hundun/blob/master/quanx/jx_tokens.js",
-      "script": "https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js",
+      "repo": "https://github.com/wwg135/Surge/blob/main/JS/jx_tokens.js",
+      "script": "https://raw.githubusercontent.com/wwg135/Surge/main/JS/jx_tokens.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign.png"
