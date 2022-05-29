@@ -13,6 +13,7 @@ let args = getArgs();
   if (resetDayLeft) {
     content.push(`𝗥𝗲𝘀𝗲𝘁:剩余${resetDayLeft}天`);
   }
+  
   if (expire && expire !== "false") {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
     content.push(`𝗘𝘅𝗽：${formatTime(expire)}`);
