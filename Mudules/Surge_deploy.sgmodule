@@ -5,8 +5,6 @@
 [General]
 # > 隐藏vpn图标
 hide-vpn-icon=true
-# > 跳过代理
-skip-proxy = %APPEND% www.baidu.com,openapi.5g.gmcc.net,*.gmcc.net,gd.10086.cn,yunbusiness.ccb.com,www.apple.com
 # > 优酷 去广告
 force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 # > BoxJs
