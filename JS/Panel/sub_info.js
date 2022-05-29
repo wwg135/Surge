@@ -6,7 +6,7 @@ Surge配置参考注释
 示例↓↓↓ 
 ----------------------------------------
 [Script]
-Sub_info = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/sub_info.js,script-update-interval=0,argument=url=[URL encode 后的机场节点链接]&reset_day=1&title=AmyInfo&icon=bonjour&color=#007aff
+Sub_info = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/sub_info.js,script-update-interval=0,argument=url=[URL encode 后的机场节点链接]&reset_day=4&expire=2023-05-03&title=AmyInfo&icon=airplane.departure&color=#00ff00
 
 [Panel]
 Sub_info = script-name=Sub_info,update-interval=86400
@@ -57,8 +57,8 @@ Sub_info = script-name=Sub_info,update-interval=86400
   $done({
     title: `${args.title} ` + `| 𝗥𝗲𝘀𝗲𝘁 : ` + `${resetDayLeft} Days`,
     content: content.join("\n"),
-    icon: args.icon || "airplane.circle",
-    "icon-color": args.color || "#007aff",
+    icon: args.icon || "airplane.departure",
+    "icon-color": args.color || "#00ff00",
   });
 })();
 
