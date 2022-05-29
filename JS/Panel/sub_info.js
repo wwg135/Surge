@@ -23,7 +23,7 @@ let args = getArgs();
   let proportion = used / total;
   let content = [`𝗨𝘀𝗲𝗱 : ${toPercent(proportion)} | 𝗔𝘃𝗹 : ${bytesToSize(total-used)}`];
   if (resetDayLeft) {
-    content.push(`剩余:${toPercent(total-used)} | 重置:剩余${resetDayLeft}天`);
+    content.push(`剩余:${toPercent(total-used)} | 𝗥𝗲𝘀𝗲𝘁:剩余${resetDayLeft}天`);
   }
   if (expire && expire !== "false") {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
@@ -41,7 +41,7 @@ let args = getArgs();
     title: `${args.title} | ⏰：${hour}:${minutes}:${seconds}`,
     content: content.join("\n"),
     icon: args.icon || "airplane.departure",
-    "icon-color": args.color || "#ff00ff",
+    "icon-color": args.color || "#FF00FF",
   });
 })();
 
