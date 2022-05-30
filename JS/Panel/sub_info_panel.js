@@ -56,10 +56,10 @@ let args = getArgs();
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `${args.title} | ⏰: ${hour}:${minutes}`,
+    title: `🧗𝓪𝓲𝓻𝓹𝓵𝓪𝓷 | ⏰: ${hour}:${minutes}`,
     content: content.join("\n"),
-    icon: args.icon || "airplane.circle",
-    "icon-color": args.color || "#007aff",
+    icon: "airplane.departure",
+    "icon-color": "#FF00FF",
   });
 })();
 
