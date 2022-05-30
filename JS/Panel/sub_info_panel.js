@@ -38,7 +38,8 @@ let args = getArgs();
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
-  let content = [`使用：${bytesToSize(used)} | 总量：${bytesToSize(total)}`];
+  let prec = precent(used,total);
+  let content = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n${prec}`];
 
   if (resetDayLeft) {
     content.push(`重置：剩余${resetDayLeft}天`);
@@ -145,4 +146,17 @@ function formatTime(time) {
   let month = dateObj.getMonth() + 1;
   let day = dateObj.getDate();
   return year + "年" + month + "月" + day + "日";
+}
+
+function precent(res,total){
+  let num = Number(((res / total)*10).toFixed(0));
+  let precentprint = '';
+  for (var i =1;i<=10;i++){
+    if (i <= num) {
+      precentprint += '🔴';
+    }else{
+      precentprint += '🟢';
+    }
+  };
+  return precentprint;
 }
