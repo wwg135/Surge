@@ -38,7 +38,7 @@ let args = getArgs();
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `🧗𝓪𝓲𝓻𝓹𝓵𝓪𝓷 | ⏰: ${hour}:${minutes}`,
+    title: `🧗𝓪𝓲𝓻𝓹𝓵𝓪𝓷 | ⏰更新时间: ${hour}:${minutes}`,
     content: content.join("\n"),
     icon: "airplane.departure",
     "icon-color": "#FF00FF",
