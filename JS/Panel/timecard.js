@@ -70,16 +70,20 @@ function datenotice() {
   }
 }
 
-//>图标依次切换自行车、汽车、高铁、飞机、礼品盒
+//>图标依次切换自行车、客车、汽车、高铁、飞机、礼品盒
 function icon_now(num){
-  if(num<=7 && num>3 ){
-    return "hare.fill"
+  if(num<=21 && num>14 ){
+    return "bus"
+  }else if(num<=14 && num>7){
+    return "car"
+  }else if(num<=7 && num>3){
+    return "tram"
   }else if(num<=3 && num>0){
-    return "alarm.fill"
+    return "airplane"
   }else if(num==0){
-    return "gift.fill"
+    return "gift"
   }else{
-    return "tortoise.fill"
+    return "bicycle"
   }
 }
 
