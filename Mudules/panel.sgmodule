@@ -9,8 +9,6 @@ net-info-panel=title="网络状态",content="请刷新",style=info,script-name=n
 
 节假日提醒 = script-name=节假日提醒,update-interval=1
 
-net_info= script-name=net_info,update-interval=1
-
 疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=1
 
 [Script]
@@ -19,7 +17,5 @@ function_timeTransform = type=generic, script-path=https://raw.githubusercontent
 net-info-panel = script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/net_info_penel.js,type=generic,script-update-interval=0
 
 节假日提醒 = type=generic,timeout=10, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/timecard.js,script-update-interval=0
-
-net_info = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/net_info.js,script-update-interval=0
 
 疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/COVID-19.js,script-update-interval=0
