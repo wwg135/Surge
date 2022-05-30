@@ -12,10 +12,10 @@ net-info-panel=title="网络状态",content="请刷新",style=info,script-name=n
 疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=1
 
 [Script]
-function_timeTransform = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/function_timeTransform.js
+function_timeTransform = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/function_timeTransform.js,script-update-interval=0
 
 net-info-panel = script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/net_info_penel.js,type=generic,script-update-interval=0
 
-节假日提醒 = type=generic,timeout=10, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/timecard.js
+节假日提醒 = type=generic,timeout=10, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/timecard.js,script-update-interval=0
 
-疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/COVID-19.js
+疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/COVID-19.js,script-update-interval=0
