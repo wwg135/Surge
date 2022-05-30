@@ -63,6 +63,9 @@ Rewrite: BoxJs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-pa
 # > TestFlight区域限制解除
 TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,script-update-interval=-1,max-size=0,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/TF_Download.js
 
+# > Unlock Buy Apple
+Buy = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/verify_receipt.js,script-update-interval=-1
+
 # > 百度vip
 http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
 
@@ -116,4 +119,4 @@ Wps.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Sc
 themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/themekuwo.js,type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme)
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, ms.jr.jd.com, me-api.jd.com, testflight.apple.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, pan.baidu.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com
+hostname = %APPEND% api.m.jd.com, ms.jr.jd.com, me-api.jd.com, testflight.apple.com, buy.itunes.apple.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, pan.baidu.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com
