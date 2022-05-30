@@ -1,13 +1,12 @@
 /*
-Surge配置参考注释.
 
 ----------------------------------------
 
 [Panel]
-Sub_info = script-name=Sub_info
+Sub_info_lite = script-name=Sub_info_lite
 
 [Script]
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/sub_info_lite.js,script-update-interval=0,argument=url=(URL encode后的机场节点链接)&reset_day=4&expire=2023-05-03&title=𝓪𝓲𝓻𝓹𝓵𝓪𝓷
+Sub_info_lite = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/sub_info_lite.js,script-update-interval=0,argument=url=(URL encode后的机场节点链接)&reset_day=4&expire=2023-05-03&title=𝓪𝓲𝓻𝓹𝓵𝓪𝓷
 
 ----------------------------------------
 
