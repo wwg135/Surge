@@ -135,9 +135,9 @@ function precent(res,total){
   let precentprint = '';
   for (var i =1;i<=10;i++){
     if (i <= num) {
-      precentprint += '🔴';
+      precentprint += '💫';
     }else{
-      precentprint += '🟢';
+      precentprint += '🌟';
     }
   };
   return precentprint;
