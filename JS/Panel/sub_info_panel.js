@@ -20,7 +20,8 @@ let args = getArgs();
   let total = info.total;
   let expire = info.expire;
   let prec = precent(used,total);
-  let content = [`已用：${bytesToSize(used)} | 总量：${bytesToSize(total)}\n${prec}`];
+  let proportion = used / total;
+  let content = [`已用：${toPercent(proportion)} | 总量：${bytesToSize(total)}\n${prec}`];
 
   if (resetDayLeft) {
     content.push(`重置：剩余${resetDayLeft}天`);
@@ -140,4 +141,9 @@ function precent(res,total){
     }
   };
   return precentprint;
+}
+
+function toPercent(proportion) {
+  const percent = Number(proportion*100).toFixed(2);
+  return percent + "%";
 }
