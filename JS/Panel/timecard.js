@@ -70,7 +70,7 @@ function datenotice() {
   }
 }
 
-//>图标依次切换自行车、汽车、高铁、飞机、火箭、飞船、礼品盒
+//>图标依次切换自行车、汽车、高铁、飞机、礼品盒
 function icon_now(num){
   if(num<=7 && num>3 ){
     return "hare.fill"
