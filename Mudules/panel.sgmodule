@@ -1,5 +1,5 @@
 #!name=Panel面板
-#!desc=更新时间：2022-05-30 10:42
+#!desc=更新时间：2022-05-30 13:32
 #!system=ios
 
 [Panel]
@@ -9,7 +9,7 @@ net-info-panel=title="网络状态",content="请刷新",style=info,script-name=n
 
 节假日提醒 = script-name=节假日提醒,update-interval=1
 
-疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=1
+#疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=1
 
 [Script]
 function_timeTransform = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/function_timeTransform.js,script-update-interval=0
@@ -18,4 +18,4 @@ net-info-panel = script-path=https://raw.githubusercontent.com/wwg135/Surge/main
 
 节假日提醒 = type=generic,timeout=10, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/timecard.js,script-update-interval=0
 
-疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/COVID-19.js,script-update-interval=0
+#疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/COVID-19.js,script-update-interval=0
