@@ -39,7 +39,7 @@ let args = getArgs();
   let total = info.total;
   let expire = args.expire || info.expire;
   let prec = precent(used,total);
-  let content = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n${prec}`];
+  let content = [`已用：${bytesToSize(used)} | 总量：${bytesToSize(total)}\n${prec}`];
 
   if (resetDayLeft) {
     content.push(`重置：剩余${resetDayLeft}天`);
@@ -56,7 +56,7 @@ let args = getArgs();
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `${args.title} | "⏰": ${hour}:${minutes}`,
+    title: `${args.title} | ⏰: ${hour}:${minutes}`,
     content: content.join("\n"),
     icon: args.icon || "airplane.circle",
     "icon-color": args.color || "#007aff",
