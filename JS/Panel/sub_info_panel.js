@@ -28,7 +28,7 @@ Sub_info = script-name=Sub_info,update-interval=600
 ----------------------------------------
 */
 
-let args = getArgs(;
+let args = getArgs();
 
 (async () => {
   let info = await getDataInfo(args.url);
