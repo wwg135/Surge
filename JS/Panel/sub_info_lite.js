@@ -7,7 +7,7 @@ Surge配置参考注释.
 AmyInfo = select, policy-path=http://sub.info?url=机场节点链接&reset_day=1&alert=1, update-interval=3600
 
 [Script]
-Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js,timeout=10
+Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Panel/sub_info_lite.js,timeout=10
 ----------------------------------------
 
 let now = new Date();
