@@ -1,5 +1,5 @@
 #!name=Surge精英版配置 by wwg135
-#!desc=更新时间：2022-05-30 16:05
+#!desc=更新时间：2022-05-30 17:51
 #!system=ios
 
 [General]
@@ -13,6 +13,11 @@ force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
 skip-proxy = %APPEND% iosapps.itunes.apple.com
 
 [Rule]
+# 以后内容不定时更新--
+DOMAIN-SUFFIX, cl2-cn.apple.com, REJECT-DROP
+DOMAIN-SUFFIX, cl4-cn.apple.com, REJECT-DROP
+DOMAIN-SUFFIX, cl5.apple.com, REJECT-DROP
+
 # > 京东 去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 # > 哔哩哔哩 去广告 
