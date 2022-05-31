@@ -70,7 +70,10 @@ testflight.apple.com = server:https://223.5.5.5/dns-query
 *github* = server:https://i.233py.com/dns-query
 
 [Rule]
-# 以后内容不定时更新--
+# > Proxy for Common Port Only
+AND,((NOT,((DEST-PORT,21))), (NOT,((DEST-PORT,22))), (NOT,((DEST-PORT,23))), (NOT,((DEST-PORT,53))), (NOT,((DEST-PORT,80))), (NOT,((DEST-PORT,123))), (NOT,((DEST-PORT,194))), (NOT,((DEST-PORT,443))), (NOT,((DEST-PORT,465))), (NOT,((DEST-PORT,587))), (NOT,((DEST-PORT,993))), (NOT,((DEST-PORT,995))), (NOT,((DEST-PORT,2052))), (NOT,((DEST-PORT,2053))), (NOT,((DEST-PORT,2082))), (NOT,((DEST-PORT,2083))), (NOT,((DEST-PORT,2086))), (NOT,((DEST-PORT,2095))), (NOT,((DEST-PORT,2096))), (NOT,((DEST-PORT,5228))), (NOT,((DEST-PORT,5229))), (NOT,((DEST-PORT,5230))), (NOT,((DEST-PORT,8080))), (NOT,((DEST-PORT,8443))), (NOT,((DEST-PORT,8880)))),DIRECT
+
+# > 以后内容不定时更新--
 DOMAIN-SUFFIX, cl2-cn.apple.com, REJECT-DROP
 DOMAIN-SUFFIX, cl4-cn.apple.com, REJECT-DROP
 DOMAIN-SUFFIX, cl5.apple.com, REJECT-DROP
