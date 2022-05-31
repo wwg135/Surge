@@ -21,7 +21,7 @@ let args = getArgs();
   let expire = info.expire;
   let prec = precent(used,total);
   let proportion = used / total;
-  let content = [`已用：${toPercent(proportion)} | 总量：${bytesToSize(total)}\n进度: ${prec}`];
+  let content = [`已用：${toPercent(proportion)} | 剩余：${bytesToSize(total-used)}\n进度: ${prec}`];
 
   if (resetDayLeft) {
     content.push(`重置：剩余${resetDayLeft}天`);
