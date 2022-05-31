@@ -1,5 +1,5 @@
 #!name=Surge精英版配置 by wwg135
-#!desc=更新时间：2022-05-31 09:07
+#!desc=更新时间：2022-05-31 13:40
 #!system=ios
 
 [General]
@@ -21,22 +21,22 @@ skip-proxy = %APPEND% iosapps.itunes.apple.com
 *.alicdn.com = server:223.5.5.5
 *.aliyun.com = server:223.5.5.5
 # > 腾迅
-*.tencent.com = server:119.28.28.28
+*.tencent.com = server:119.29.29.29
 # > 腾讯QQ
-*.qq.com = server:119.28.28.28
+*.qq.com = server:119.29.29.29
 # > 微信
-*.weixin.com = server:119.28.28.28
-*.qpic.cn = server:119.28.28.28
+*.weixin.com = server:119.29.29.29
+*.qpic.cn = server:119.29.29.29
 # > 京东
-*.jd.com = server:119.28.28.28
+*.jd.com = server:223.5.5.5
 # > 哔哩哔喱
-*.bilibili.com = server:119.29.29.29
+*.bilibili.com = server:223.5.5.5
 # > 网易
-*.163.com = server:119.29.29.29
-*.126.com = server:119.29.29.29
-*.126.net = server:119.29.29.29
-*.127.net = server:119.29.29.29
-*.netease.com = server:119.29.29.29
+*.163.com = server:223.5.5.5
+*.126.com = server:223.5.5.5
+*.126.net = server:223.5.5.5
+*.127.net = server:223.5.5.5
+*.netease.com = server:223.5.5.5
 # > 小米
 *.mi.com = server:119.29.29.29
 *.xiaomi.com = server:119.29.29.29
