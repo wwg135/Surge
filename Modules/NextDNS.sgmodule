@@ -1,5 +1,6 @@
 #!name=NextDNS-Utra-Low
 #!desc=DNS Over HTTPS
+#!system=ios
 
 [General]
 dns-server = 45.90.28.72, 45.90.30.72
