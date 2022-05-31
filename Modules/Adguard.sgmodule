@@ -1,5 +1,6 @@
 #!name=Unlock Adguard
 #!desc=Altstore
+#!system=ios
 
 [MITM]
 hostname = %APPEND% *api.adguard.com
