@@ -52,10 +52,10 @@ amplifi.lan = server:syslib
 *.lan = server:syslib
 # 指定 IP 地址或另一个域名
 # # PCBeta
-*.pcbeta.com = 36.27.212.81
-cdn.pcbeta.attachment.inimc.com = 36.27.212.81
-cdn.pcbeta.static.inimc.com = 36.27.212.81
-cdn.pcbeta.css.inimc.com = 36.27.212.81
+*.pcbeta.com = 223.5.5.5
+cdn.pcbeta.attachment.inimc.com = 223.5.5.5
+cdn.pcbeta.static.inimc.com = 223.5.5.5
+cdn.pcbeta.css.inimc.com = 223.5.5.5
 # 其他
 *.aliqin.com = server:223.6.6.6
 *.ali*.com = server:223.6.6.6
