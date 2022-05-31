@@ -13,7 +13,7 @@ DOMAIN-KEYWORD,nextdns,Proxy
 
 [Script]
 # > Netdns
-nextdns_linkedip.js = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/Shawn1eong/Proxy-Tools/master/Module/Class/Nextdns/nextdns_linkedip.js,script-update-interval=0
+nextdns_linkedip.js = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/nextdns_linkedip.js,script-update-interval=0
 
 NextDNS=type=http-request,pattern=https:\/\/next\.dns,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/NextDNS/gen-module.js
 
