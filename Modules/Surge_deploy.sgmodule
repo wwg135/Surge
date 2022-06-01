@@ -136,6 +136,9 @@ URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
 https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=6131333537653261363463323331666265663763396239663835636662373930
 
 [Script]
+# > 今日头条
+http-response ^https://[a-zA-Z]*\.snssdk\.com/api/news/feed/v88/ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/Toutiao.js
+
 # > 京东App 历史价格 
 京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/jd_price.js
 
@@ -204,4 +207,4 @@ themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercont
 http-request https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A),script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/YouTube.js
 
 [MITM]
-hostname = %APPEND% *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, api.m.jd.com, ms.jr.jd.com, me-api.jd.com, testflight.apple.com, buy.itunes.apple.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, pan.baidu.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com
+hostname = %APPEND% *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, *.snssdk.com, api.m.jd.com, ms.jr.jd.com, me-api.jd.com, testflight.apple.com, buy.itunes.apple.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, pan.baidu.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com
