@@ -371,6 +371,28 @@ DOMAIN-SUFFIX,click.tz.simba.taobao.com
 DOMAIN-SUFFIX,stat.simba.taobao.com
 DOMAIN-SUFFIX,m-adash.m.taobao.com
 DOMAIN-SUFFIX,adashbc.m.taobao.com
+# > toutiao
+DOMAIN, dm.toutiao.com
+DOMAIN-SUFFIX, ad.toutiao.com
+DOMAIN-SUFFIX, clk.gentags.net
+DOMAIN-SUFFIX, dm.toutiao.com
+DOMAIN-SUFFIX, dm.pstatp.com
+DOMAIN-SUFFIX, dm.bytedance.com
+DOMAIN-SUFFIX, uop.umeng.com
+DOMAIN-SUFFIX, policy.jd.com
+DOMAIN-SUFFIX, kepler.jd.com
+DOMAIN-SUFFIX, bdsp.x.jd.com
+DOMAIN-SUFFIX, keplerapi.jd.com
+DOMAIN-SUFFIX, m.suning.com
+DOMAIN-SUFFIX, adshare.toutiao.com
+DOMAIN-SUFFIX, tunion-api.m.taobao.com
+DOMAIN-SUFFIX, mapi.m.jd.com
+DOMAIN-SUFFIX, s1.pstatp.com
+DOMAIN-SUFFIX, s2.pstatp.com
+DOMAIN-SUFFIX, s3.pstatp.com
+DOMAIN-SUFFIX, a3.pstatp.com
+DOMAIN-SUFFIX, a3.bytecdn.cn
+DOMAIN-SUFFIX, ichannel.snssdk.com
 # > Thunder
 DOMAIN,adsp.xunlei.com
 DOMAIN,etl.xlmc.sandai.net
