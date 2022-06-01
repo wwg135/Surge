@@ -491,6 +491,61 @@ DOMAIN,ads.viber.com
 DOMAIN,ads-d.viber.com
 DOMAIN,ads.aws.viber.com
 
+# (W)
+# > weibo
+DOMAIN-SUFFIX,fastimage.uve.weibo.com
+DOMAIN-SUFFIX,adimg.uve.weibo.com
+DOMAIN-SUFFIX,adimg.vue.weibo.com
+DOMAIN-SUFFIX,zymo.mps.weibo.com
+DOMAIN-SUFFIX,weibomingzi.com
+DOMAIN-SUFFIX,sdkapp.uve.weibo.com
+DOMAIN-SUFFIX,s.alitui.weibo.com
+DOMAIN-SUFFIX,promote.biz.weibo.cn
+DOMAIN-SUFFIX,gw5.push.mcp.weibo.cn
+DOMAIN-SUFFIX,game.weibo.cn
+DOMAIN-SUFFIX,biz.weibo.com
+DOMAIN-SUFFIX,adimg.uve.weibo.com
+DOMAIN-SUFFIX,game.weibo.com
+DOMAIN-SUFFIX,gw6.push.mcp.weibo.cn
+DOMAIN-SUFFIX,ads.viber.com
+DOMAIN-SUFFIX,ads-d.viber.com
+DOMAIN-SUFFIX,ads.aws.viber.com
+DOMAIN-SUFFIX,alitui.weibo.com
+HOST,adimg.uve.weibo.com
+HOST,adimg.vue.weibo.com
+DOMAIN-SUFFIX,adimg.uve.weibo.com
+DOMAIN-SUFFIX,alitui.weibo.com
+DOMAIN-SUFFIX,biz.weibo.com
+DOMAIN-SUFFIX,game.weibo.cn
+DOMAIN-SUFFIX,game.weibo.com
+DOMAIN-SUFFIX,gw5.push.mcp.weibo.cn
+DOMAIN-SUFFIX,gw6.push.mcp.weibo.cn
+DOMAIN-SUFFIX,promote.biz.weibo.cn
+DOMAIN-SUFFIX,s.alitui.weibo.com
+DOMAIN-SUFFIX,sdkapp.uve.weibo.com
+DOMAIN-SUFFIX,weibomingzi.com
+DOMAIN-SUFFIX,zymo.mps.weibo.com
+DOMAIN-SUFFIX,adimg.vue.weibo.com
+DOMAIN-SUFFIX,dp.im.weibo.cn
+DOMAIN-SUFFIX,m.game.weibo.cn
+DOMAIN-SUFFIX,c.biz.weibo.com
+DOMAIN-SUFFIX,c.wcpt.biz.weibo.com
+DOMAIN-SUFFIX,click.uve.weibo.com
+DOMAIN-SUFFIX,wax.weibo.com
+DOMAIN-SUFFIX,wbapp.uve.weibo.com
+DOMAIN-SUFFIX,widget.weibo.com
+DOMAIN-SUFFIX,zc.biz.weibo.com
+DOMAIN-SUFFIX,dsp.edm.weibo.cn
+DOMAIN-SUFFIX,alitui.weibo.com.cn
+DOMAIN-SUFFIX,biz.weibo.com.cn
+DOMAIN-SUFFIX,game.weibo.com.cn
+DOMAIN-SUFFIX,tui.weibo.com
+DOMAIN-SUFFIX,wax.weibo.com.cn
+DOMAIN-SUFFIX,ad.weibo.com
+DOMAIN-SUFFIX,adstrategy.biz.weibo.com
+DOMAIN-SUFFIX,s.weibo.com
+DOMAIN-SUFFIX,vs.biz.weibo.com
+
 # (Y)
 # > Yahoo
 DOMAIN-SUFFIX,adserver.yahoo.com
