@@ -279,6 +279,7 @@ DOMAIN-SUFFIX,aty.sohu.com
 DOMAIN,hui.sohu.com
 # > Sougou
 DOMAIN, indivi-cdn.shouji.sogou.com/wapdl/hole
+DOMAIN-SUFFIX, business-cdn.shouji.sogou.com
 DOMAIN-SUFFIX,epro.sogou.com
 DOMAIN-SUFFIX,golden1.sogou.com
 DOMAIN-SUFFIX,inte.sogou.com
