@@ -423,6 +423,13 @@ DOMAIN,mobilelog.kugou.com
 DOMAIN,mobilead.kuwo.cn
 DOMAIN,rich.kuwo.cn
 DOMAIN,tmead.y.qq.com
+
+host-suffix, tetrack.qq.com
+host-suffix, tpns.tencent.com
+host-suffix, api.poll.video.qq.com
+host-suffix, static-res.qq.com
+host-suffix, stat.tpns.tencent.com
+host, h.trace.qq.com
 # > Taobao
 DOMAIN-SUFFIX,apoll.m.taobao.com
 DOMAIN-SUFFIX,h-adashx.ut.taobao.com
