@@ -1,5 +1,5 @@
 #!name=Surge精英版配置 by wwg135
-#!desc=更新时间：2022-05-31 13:40
+#!desc=更新时间：2022-06-01 10:36
 #!system=ios
 
 [General]
@@ -114,6 +114,24 @@ URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ads/index,REJECT-TINYGIF
 ^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/general\/search\/single\/ https://aweme.snssdk.com/aweme/v1/general/search/single/ header
 ^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/hot/search\/video\/list\/ https://aweme.snssdk.com/aweme/v1/hot/search/video/list/ header
 
+# > YouTube去广告
+URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/pagead\/,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/ptracking\?,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/_get_ads,REJECT
+URL-REGEX,https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite,REJECT
+URL-REGEX,https?:\/\/s0.2mdn.net\/ads\/,REJECT
+URL-REGEX,https?:\/\/stats.tubemogul.com\/stats\/,REJECT
+URL-REGEX,https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
+URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
+URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
+URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
+
+[URL Rewrite]
+ctier=[A-Z] citer=A 302
+
 [Header Rewrite]
 # > 小小影视vip (By Eric)
 https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=6131333537653261363463323331666265663763396239663835636662373930
@@ -183,5 +201,8 @@ Wps.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Sc
 # 酷我换肤(已经有的皮肤需要先从本地皮肤删除再换 By@ s y)
 themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/themekuwo.js,type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme)
 
+# YouTube去广告
+http-request https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A),script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/YouTube.js
+
 [MITM]
-hostname = %APPEND% api.m.jd.com, ms.jr.jd.com, me-api.jd.com, testflight.apple.com, buy.itunes.apple.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, pan.baidu.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com
+hostname = %APPEND% *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, api.m.jd.com, ms.jr.jd.com, me-api.jd.com, testflight.apple.com, buy.itunes.apple.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, pan.baidu.com, *.googlevideo.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, *.bjxkhc.com, api.bjxkhc.com, *.amemv.com, aweme*.snssdk.com, *.xiaoxiao*.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, r.inews.qq.com, *.kuwo.cn, vip1.kuwo.cn, *.bjxkhc.com, account.wps.*, biz.caiyunapp.com
