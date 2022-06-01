@@ -100,7 +100,9 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/pay/ok$ ,REJECT-TINYGIF
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ver/index_ios$,REJECT
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ads/index,REJECT-TINYGIF
+
 [URL Rewrite]
+ctier=[A-Z] citer=A 302
 # > TikTok 解锁
 (?<=_region=)CN(?=&) JP 307
 (?<=&app_version=)16..(?=.?.?&) 1 307
@@ -128,9 +130,6 @@ URL-REGEX,https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
 URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
 URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
 URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
-
-[URL Rewrite]
-ctier=[A-Z] citer=A 302
 
 [Header Rewrite]
 # > 小小影视vip (By Eric)
