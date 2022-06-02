@@ -12,63 +12,6 @@ force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
 # > TestFlight区域限制解除
 skip-proxy = %APPEND% iosapps.itunes.apple.com
 
-[Host]
-# > 淘宝
-*.taobao.com = server:223.5.5.5
-# > 天猫
-*.tmall.com = server:223.6.6.6
-# > 阿里云
-*.alicdn.com = server:223.5.5.5
-*.aliyun.com = server:223.5.5.5
-# > 腾迅
-*.tencent.com = server:119.29.29.29
-# > 腾讯QQ
-*.qq.com = server:119.29.29.29
-# > 微信
-*.weixin.com = server:119.29.29.29
-*.qpic.cn = server:119.29.29.29
-# > 京东
-*.jd.com = server:223.5.5.5
-# > 哔哩哔喱
-*.bilibili.com = server:223.5.5.5
-# > 网易
-*.163.com = server:223.5.5.5
-*.126.com = server:223.5.5.5
-*.126.net = server:223.5.5.5
-*.127.net = server:223.5.5.5
-*.netease.com = server:223.5.5.5
-# > 小米
-*.mi.com = server:119.29.29.29
-*.xiaomi.com = server:119.29.29.29
-# > 百度
-*.baidu.com = server:syslib
-*.bdstatic.com = server:syslib
-# > 其他
-routerlogin.net = server:syslib
-_hotspot_.m2m = server:syslib
-router.asus.com = server:syslib
-hotspot.cslwifi.com = server:syslib
-amplifi.lan = server:syslib
-*.lan = server:syslib
-# 指定 IP 地址或另一个域名
-# # PCBeta
-*.pcbeta.com = 223.5.5.5
-cdn.pcbeta.attachment.inimc.com = 223.5.5.5
-cdn.pcbeta.static.inimc.com = 223.5.5.5
-cdn.pcbeta.css.inimc.com = 223.5.5.5
-# 其他
-*.aliqin.com = server:223.6.6.6
-*.ali*.com = server:223.6.6.6
-*.upyun.com = server:223.6.6.6
-*.mmstat.com = server:223.6.6.6
-hdslb.com = server:119.29.29.29
-# > testfligh
-testflight.apple.com = server:https://223.5.5.5/dns-query
-# kinghong
-*.kingkong.com.tw = server:https://i.233py.com/dns-query
-# > Github
-*github* = server:https://i.233py.com/dns-query
-
 [Rule]
 # > Proxy for Common Port Only
 AND,((NOT,((DEST-PORT,21))), (NOT,((DEST-PORT,22))), (NOT,((DEST-PORT,23))), (NOT,((DEST-PORT,53))), (NOT,((DEST-PORT,80))), (NOT,((DEST-PORT,123))), (NOT,((DEST-PORT,194))), (NOT,((DEST-PORT,443))), (NOT,((DEST-PORT,465))), (NOT,((DEST-PORT,587))), (NOT,((DEST-PORT,993))), (NOT,((DEST-PORT,995))), (NOT,((DEST-PORT,2052))), (NOT,((DEST-PORT,2053))), (NOT,((DEST-PORT,2082))), (NOT,((DEST-PORT,2083))), (NOT,((DEST-PORT,2086))), (NOT,((DEST-PORT,2095))), (NOT,((DEST-PORT,2096))), (NOT,((DEST-PORT,5228))), (NOT,((DEST-PORT,5229))), (NOT,((DEST-PORT,5230))), (NOT,((DEST-PORT,8080))), (NOT,((DEST-PORT,8443))), (NOT,((DEST-PORT,8880)))),DIRECT
