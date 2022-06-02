@@ -2,18 +2,4 @@
 #!desc=更新时间：2022-06-01 18:49  交流QQ:1358804498
 #!system=ios
 
-[Rule]
-
-# > 爱美剧 去广告
-URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/pay/ok$ ,REJECT-TINYGIF
-URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ver/index_ios$,REJECT
-URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ads/index,REJECT-TINYGIF
-
-[Header Rewrite]
-# > 小小影视vip (By Eric)
-https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=6131333537653261363463323331666265663763396239663835636662373930
-
-[Script]
-
-[MITM]
-hostname = %APPEND% 
+仓库已逐渐搬迁，可以与QQ交流
