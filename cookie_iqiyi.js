@@ -5,7 +5,7 @@ After launching iQIYI app. You can disable this script when a success notificati
 Note that the following config is only a local script configuration, please put this script into Quantumult X/Script
 
 [rewrite_local]
-https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action.*authcookie url script-response-body MyConfig/js/cookie_iqiyi.js
+https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action.*authcookie url script-response-body https://raw.githubusercontent.com/wwg135/Surge/main/cookie_iqiyi.js
 
 MITM = passport.iqiyi.com
 */
