@@ -2,13 +2,14 @@
 #!desc=更新时间:2022-06-23 01:22
 #!system=ios
 
+[Rule]
 # > Apple
-DOMAIN,ns.itunes.apple.com
-DOMAIN,appldnld.apple.com
-DOMAIN,mesu.apple.com
-DOMAIN,xp.apple.com
-DOMAIN,gdmf.apple.com
-DOMAIN-SUFFIX,iadsdk.apple.com
-DOMAIN-SUFFIX,ads.internal.unity3d.com
-DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com
-DOMAIN-SUFFIX,unityads.unity3d.com
+DOMAIN,ns.itunes.apple.com,REJECT
+DOMAIN,appldnld.apple.com,REJECT
+DOMAIN,mesu.apple.com,REJECT
+DOMAIN,xp.apple.com,REJECT
+DOMAIN,gdmf.apple.com,REJECT
+DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
+DOMAIN-SUFFIX,ads.internal.unity3d.com,REJECT
+DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,REJECT
+DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
