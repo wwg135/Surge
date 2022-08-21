@@ -42,13 +42,6 @@
       "type": "boolean",
       "desc": "部分接口签到过程可能需要关注店铺, 如介意可选择关闭."
     }, {
-      "id": "JD_DailyBonusTimeOut",
-      "name": "超时退出 (毫秒)",
-      "val": "",
-      "type": "number",
-      "placeholder": "默认无超时 (点击以展开说明)",
-      "desc": "按需填写, 用于由网络不稳定引起的脚本中断, 正常或越狱用户建议留空. 如QX日志出现大量\"JS Context timeout\"后脚本中断时, 建议填写6000"
-    }, {
       "id": "JD_DailyBonusDelay",
       "name": "接口延迟 (毫秒)",
       "val": "",
