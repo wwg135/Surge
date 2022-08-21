@@ -6,7 +6,7 @@
   "repo": "https://github.com/wwg135/Surge/tree/main/boxjs",
   "apps": [
     {
-    "id": "多合一签到",
+    "id": "签到",
     "name": "京东",
     "keys": ["CookiesJD"],
     "descs_html": [
