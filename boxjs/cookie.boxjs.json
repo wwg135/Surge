@@ -123,6 +123,24 @@
       "script": "https://raw.githubusercontent.com/wwg135/master/Quantumult-X/task/caiyun.js"
     },
     {
+      "id": "videoqq",
+      "name": "腾讯视频",
+      "keys": [
+        "chavy_cookie_videoqq",
+        "chavy_auth_url_videoqq",
+        "chavy_auth_header_videoqq",
+        "chavy_msign_url_videoqq",
+        "chavy_msign_header_videoqq"
+      ],
+      "author": "@chavyleung",
+      "repo": "https://github.com/chavyleung/scripts/tree/master/videoqq",
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/videoqq.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/videoqq.png"
+      ]
+    },
+    {
       "id": "jx_tokens",
       "name": "京喜tokens",
       "keys": ["jx_tokens"],
