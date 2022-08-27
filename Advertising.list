@@ -2,16 +2,6 @@
 # > General
 DOMAIN-KEYWORD,adservice
 
-# (0~9)
-# > 51wnl
-DOMAIN,ad.51wnl-cq.com
-DOMAIN,adextra.51wnl-cq.com
-DOMAIN,log.51wnl-cq.com
-DOMAIN,r.51wnl-cq.com
-# > 12306
-DOMAIN,ad.12306.cn
-
-# (A)
 # > Alibaba
 DOMAIN,tunion-api.m.taobao.com
 # > YOUKU
@@ -34,19 +24,8 @@ DOMAIN,optimus-ads.amap.com.w.alikunlun.com
 DOMAIN-SUFFIX, shouji.sougou.com
 DOMAIN,u51.me
 DOMAIN-SUFFIX,u51.me
-# ------
-# > Autohome
-DOMAIN,adproxy.autohome.com.cn
-DOMAIN,rd.autohome.com.cn
-DOMAIN,al.autohome.com.cn
-DOMAIN,applogapi.autohome.com.cn
-DOMAIN,adm0.autoimg.cn
-DOMAIN,adm1.autoimg.cn
-DOMAIN,adm2.autoimg.cn
-DOMAIN,adm3.autoimg.cn
 
-# (B)
-# --- (Baidu) ---
+# > Baidu
 DOMAIN-SUFFIX,duapps.com
 DOMAIN-SUFFIX,cpro.baidu.com
 DOMAIN-SUFFIX,pos.baidu.com
@@ -99,31 +78,10 @@ DOMAIN,iqiyim.adtrack.enlightent.cn
 DOMAIN,dig.bdurl.net
 DOMAIN,ads3-normal-lq.zijieapi.com
 DOMAIN,ads5-normal-lq.zijieapi.com
-# > Bilibili
-DOMAIN-SUFFIX,cm.bilibili.com
-DOMAIN-SUFFIX,cm.ad.bilibili.com
-DOMAIN-SUFFIX,cm.adcommon.bilibili.com
-DOMAIN-SUFFIX,cm.game.bilibili.com
-DOMAIN-SUFFIX,cm.track.biligame.bilibili.com
 
-# (C)
-# > CCTVVideo
-DOMAIN,adstore-index-1252524079.file.myqcloud.com
-# > CNTV
-DOMAIN,galaxy.bjcathay.com
-DOMAIN,mdrecv.app.cntvwb.cn
-DOMAIN,sdapprecv.app.cntvwb.cn
-DOMAIN,vdapprecv.app.cntvwb.cn
-# > Chelaile
-DOMAIN,atrace.chelaile.net.cn
-DOMAIN,logs.chelaile.net.cn
-DOMAIN,ad.chelaile.net.cn
-
-# (D)
 # > Douban
 AND,((USER-AGENT,Frodo*), (DOMAIN,119.29.29.29))
 
-# (G)
 # > Google
 DOMAIN-SUFFIX,google-analytics.com
 DOMAIN,safebrowsing.googleapis.com
@@ -149,65 +107,10 @@ DOMAIN-SUFFIX,www.googleadservices.com
 DOMAIN-SUFFIX,www.google-analytics.com
 DOMAIN,ads.youtube.com
 
-# (H)
-# > HunanTV
-DOMAIN-SUFFIX,da.mgtv.com
-DOMAIN-SUFFIX,da.hunantv.com
-DOMAIN-SUFFIX,log.hunantv.com
-DOMAIN-SUFFIX,v2.hunantv.com
-# > Hupu
-DOMAIN,adx.hupu.com
-DOMAIN,adx-api.hupu.com
-DOMAIN,goblin.hupu.com
-# > happycast
-DOMAIN,ad.hpplay.cn
-DOMAIN,adc.hpplay.cn
-DOMAIN,adcdn.hpplay.cn
-DOMAIN,adeng.hpplay.cn
-DOMAIN,pin.hpplay.cn
-DOMAIN,rp.hpplay.cn
-DOMAIN,rpt.hpplay.cn
-
-# (J)
-# >jxedt
-DOMAIN,richmanapi.jxedt.com
-DOMAIN,richmanmain.jxedt.com
-DOMAIN,richmanrules.jxedt.com
-
-# (K)
-# > Kingsoft
-DOMAIN,ad-stat.ksosoft.com
-DOMAIN,img.auction-ads.wpscdn.cn
-DOMAIN,counter.kingsoft.com
-DOMAIN,counter.ksosoft.com
-DOMAIN,minfo.wps.cn
-DOMAIN,mobad.ijinshan.com
-DOMAIN,ups.ksmobile.net
-DOMAIN,ws.ksmobile.net
 # > Kuaishou
 DOMAIN-SUFFIX,e.kuaishou.com
 DOMAIN,js-ad.a.yximgs.com
 
-# (L)
-# > Le
-DOMAIN-SUFFIX,webp2p.letv.com
-DOMAIN,ark.letv.com
-DOMAIN,emma-414870e223.huodonghezi.com
-DOMAIN,g3.letv.com
-DOMAIN,n.mark.letv.com
-# > LinkWiFi
-DOMAIN,a.wkanx.com
-DOMAIN,cwx.lianwangtech.com
-DOMAIN,c1wx.lianwangtech.com
-
-# (M)
-# > Microsoft
-DOMAIN-SUFFIX,ads.msn.com
-DOMAIN-SUFFIX,ads1.msn.com
-DOMAIN-SUFFIX,ads2.msn.com
-DOMAIN-SUFFIX,bingads.microsoft.com
-DOMAIN-SUFFIX,rads.msn.com
-DOMAIN,mobileads.msn.com
 # > MiguVideo
 DOMAIN-SUFFIX,ad.cmvideo.cn
 DOMAIN,ggc.cmvideo.cn
@@ -217,65 +120,6 @@ DOMAIN,ggv.cmvideo.cn
 DOMAIN,ggx.cmvideo.cn
 DOMAIN,ggx03.miguvideo.com
 
-# (N)
-# > NetEase
-DOMAIN-SUFFIX,dsp.youdao.com
-DOMAIN-SUFFIX,union.youdao.com
-DOMAIN,ad.bn.netease.com
-DOMAIN,ad.yixin.im
-DOMAIN,admusicpic.music.126.net
-DOMAIN,g1.163.com
-DOMAIN,gorgon.youdao.com
-DOMAIN,iad.g.163.com
-DOMAIN,iadmat.nosdn.127.net
-DOMAIN,iadmusicmat.music.126.net
-DOMAIN,iadmusicmatvideo.music.126.net
-DOMAIN,impservice.dictapp.youdao.com
-DOMAIN,impservice.youdao.com
-DOMAIN,n.3g.163.com
-DOMAIN,nex.163.com
-DOMAIN,yt-adp.nosdn.127.net
-DOMAIN,yt-adp.ws.126.net
-
-# (P)
-# > PPTV
-DOMAIN,ads.aplus.pptv.com
-DOMAIN,ads.aplusapi.pptv.com
-DOMAIN,asimgs.pplive.cn
-DOMAIN,de.as.pptv.com
-# > Photoable
-DOMAIN,regist.fotoable.com
-DOMAIN,cdn.adapi.fotoable.com
-# > PeanutWiFi
-DOMAIN,adnew.wifi8.com
-DOMAIN,adfile.wifi8.com
-# > PConline
-DOMAIN,ad-analysis.pconline.com.cn
-DOMAIN,iad0ssl.pcauto.com.cn
-DOMAIN,iad0ssl.pconline.com.cn
-DOMAIN,imgad0.pcauto.com.cn
-DOMAIN,imgad0.pconline.com.cn
-DOMAIN,ivy.pchouse.com.cn
-# > Phoenix New Media
-DOMAIN-SUFFIX,deliver.ifeng.com
-DOMAIN,api.newad.ifeng.com
-DOMAIN,ifengad.3g.ifeng.com
-
-# (S)
-# > Sina
-DOMAIN-SUFFIX,alitui.weibo.com
-DOMAIN-SUFFIX,beacon.sina.com.cn
-DOMAIN,adimg.uve.weibo.com
-DOMAIN,adimg.vue.weibo.com
-DOMAIN,u1.img.mobile.sina.cn
-DOMAIN,sax.sina.com.cn
-DOMAIN,saxs.sina.com.cn
-DOMAIN,saxn.sina.com.cn
-# > SOHU
-DOMAIN-SUFFIX,ad.sohu.com
-DOMAIN-SUFFIX,ads.sohu.com
-DOMAIN-SUFFIX,aty.sohu.com
-DOMAIN,hui.sohu.com
 # > Sougou
 DOMAIN, indivi-cdn.shouji.sogou.com/wapdl/hole
 DOMAIN-SUFFIX, business-cdn.shouji.sogou.com
@@ -297,16 +141,8 @@ DOMAIN-SUFFIX,bazinga.mse.sogou.com
 DOMAIN-SUFFIX,bite.theta.sogoucdn.com
 DOMAIN-SUFFIX,brand.sogou.com
 DOMAIN-SUFFIX,bsiet.husky.sogou.com
-# > Snapchat
-DOMAIN,ads.snapchat.com
-DOMAIN,adsapi.snapchat.com
-# > Skyworth
-DOMAIN-SUFFIX,hoisin.coocaa.com
-DOMAIN-SUFFIX,hoisin.coocaatv.com
-DOMAIN,data-hoisin.coocaa.com
 
-# (T)
-# --- (Tencent) ---
+# > Tencent
 DOMAIN-SUFFIX,news.l.qq.com
 DOMAIN-SUFFIX,activeqq.3g.qq.com
 DOMAIN-SUFFIX,ad.qq.com
@@ -405,7 +241,7 @@ DOMAIN,pgdt.ugdtimg.com
 DOMAIN,splashqqlive.gtimg.com
 DOMAIN,vv.video.qq.com
 DOMAIN,wa.gtimg.com
-# > Tencent Music (TME)
+# > Tencent Music
 DOMAIN,ad.tencentmusic.com
 DOMAIN,adstats.tencentmusic.com
 DOMAIN,adserviceretry.kugou.com
@@ -480,106 +316,7 @@ DOMAIN-SUFFIX,s3.pstatp.com
 DOMAIN-SUFFIX,a3.pstatp.com
 DOMAIN-SUFFIX,a3.bytecdn.cn
 DOMAIN-SUFFIX,ichannel.snssdk.com
-# > Thunder
-DOMAIN,adsp.xunlei.com
-DOMAIN,etl.xlmc.sandai.net
 
-# (V)
-# > VariFlight
-DOMAIN,adv-adlog.variflight.com
-DOMAIN,adv-ads.variflight.com
-DOMAIN,app-ad.variflight.com
-# > Viber
-DOMAIN,ads.viber.com
-DOMAIN,ads-d.viber.com
-DOMAIN,ads.aws.viber.com
-
-# (W)
-# > weibo
-DOMAIN-SUFFIX,fastimage.uve.weibo.com
-DOMAIN-SUFFIX,adimg.uve.weibo.com
-DOMAIN-SUFFIX,adimg.vue.weibo.com
-DOMAIN-SUFFIX,zymo.mps.weibo.com
-DOMAIN-SUFFIX,weibomingzi.com
-DOMAIN-SUFFIX,sdkapp.uve.weibo.com
-DOMAIN-SUFFIX,s.alitui.weibo.com
-DOMAIN-SUFFIX,promote.biz.weibo.cn
-DOMAIN-SUFFIX,gw5.push.mcp.weibo.cn
-DOMAIN-SUFFIX,game.weibo.cn
-DOMAIN-SUFFIX,biz.weibo.com
-DOMAIN-SUFFIX,adimg.uve.weibo.com
-DOMAIN-SUFFIX,game.weibo.com
-DOMAIN-SUFFIX,gw6.push.mcp.weibo.cn
-DOMAIN-SUFFIX,ads.viber.com
-DOMAIN-SUFFIX,ads-d.viber.com
-DOMAIN-SUFFIX,ads.aws.viber.com
-DOMAIN-SUFFIX,alitui.weibo.com
-DOMAIN,adimg.uve.weibo.com
-DOMAIN,adimg.vue.weibo.com
-DOMAIN-SUFFIX,adimg.uve.weibo.com
-DOMAIN-SUFFIX,alitui.weibo.com
-DOMAIN-SUFFIX,biz.weibo.com
-DOMAIN-SUFFIX,game.weibo.cn
-DOMAIN-SUFFIX,game.weibo.com
-DOMAIN-SUFFIX,gw5.push.mcp.weibo.cn
-DOMAIN-SUFFIX,gw6.push.mcp.weibo.cn
-DOMAIN-SUFFIX,promote.biz.weibo.cn
-DOMAIN-SUFFIX,s.alitui.weibo.com
-DOMAIN-SUFFIX,sdkapp.uve.weibo.com
-DOMAIN-SUFFIX,weibomingzi.com
-DOMAIN-SUFFIX,zymo.mps.weibo.com
-DOMAIN-SUFFIX,adimg.vue.weibo.com
-DOMAIN-SUFFIX,dp.im.weibo.cn
-DOMAIN-SUFFIX,m.game.weibo.cn
-DOMAIN-SUFFIX,c.biz.weibo.com
-DOMAIN-SUFFIX,c.wcpt.biz.weibo.com
-DOMAIN-SUFFIX,click.uve.weibo.com
-DOMAIN-SUFFIX,wax.weibo.com
-DOMAIN-SUFFIX,wbapp.uve.weibo.com
-DOMAIN-SUFFIX,widget.weibo.com
-DOMAIN-SUFFIX,zc.biz.weibo.com
-DOMAIN-SUFFIX,dsp.edm.weibo.cn
-DOMAIN-SUFFIX,alitui.weibo.com.cn
-DOMAIN-SUFFIX,biz.weibo.com.cn
-DOMAIN-SUFFIX,game.weibo.com.cn
-DOMAIN-SUFFIX,tui.weibo.com
-DOMAIN-SUFFIX,wax.weibo.com.cn
-DOMAIN-SUFFIX,ad.weibo.com
-DOMAIN-SUFFIX,adstrategy.biz.weibo.com
-DOMAIN-SUFFIX,s.weibo.com
-DOMAIN-SUFFIX,vs.biz.weibo.com
-# > 163
-DOMAIN-SUFFIX,dsp.youdao.com
-DOMAIN-SUFFIX,union.youdao.com
-DOMAIN,ad.bn.netease.com
-DOMAIN,ad.yixin.im
-DOMAIN,admusicpic.music.126.net
-DOMAIN,g1.163.com
-DOMAIN,gorgon.youdao.com
-DOMAIN,iad.g.163.com
-DOMAIN,iadmat.nosdn.127.net
-DOMAIN,iadmusicmat.music.126.net
-DOMAIN,iadmusicmatvideo.music.126.net
-DOMAIN,impservice.dictapp.youdao.com
-DOMAIN,impservice.youdao.com
-DOMAIN,n.3g.163.com
-DOMAIN,nex.163.com
-DOMAIN,yt-adp.nosdn.127.net
-DOMAIN,yt-adp.ws.126.net
-
-# (Y)
-# > Yahoo
-DOMAIN-SUFFIX,adserver.yahoo.com
-DOMAIN-SUFFIX,adspecs.yahoo.com
-DOMAIN-SUFFIX,advertising.yahoo.com
-DOMAIN-SUFFIX,gemini.yahoo.com
-DOMAIN,admarketing.yahoo.net
-DOMAIN,ads.auctions.yahoo.com
-DOMAIN,ads.finance.yahoo.com
-DOMAIN,ads.yahoo.com
-DOMAIN,ads.yahoo.de
-
-# (Z)
 # > Zhihu
 USER-AGENT,AVOS*
 DOMAIN,appcloud2.in.zhihu.com
