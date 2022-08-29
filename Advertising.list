@@ -79,9 +79,6 @@ DOMAIN,dig.bdurl.net
 DOMAIN,ads3-normal-lq.zijieapi.com
 DOMAIN,ads5-normal-lq.zijieapi.com
 
-# > Douban
-AND,((USER-AGENT,Frodo*), (DOMAIN,119.29.29.29))
-
 # > Google
 DOMAIN-SUFFIX,google-analytics.com
 DOMAIN,safebrowsing.googleapis.com
@@ -316,15 +313,3 @@ DOMAIN-SUFFIX,s3.pstatp.com
 DOMAIN-SUFFIX,a3.pstatp.com
 DOMAIN-SUFFIX,a3.bytecdn.cn
 DOMAIN-SUFFIX,ichannel.snssdk.com
-
-# > Zhihu
-USER-AGENT,AVOS*
-DOMAIN,appcloud2.in.zhihu.com
-DOMAIN,mqtt.zhihu.com
-DOMAIN,sugar.zhihu.com
-DOMAIN,118.89.204.198
-IP-CIDR,118.89.204.198/32,no-resolve
-IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
-# > ZOL
-DOMAIN,apppv.zol.com.cn
-DOMAIN,pvnapp.zol.com.cn
