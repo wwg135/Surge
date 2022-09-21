@@ -108,6 +108,12 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/202818 - reject
 ^https?:\/\/storage\.360buyimg\.com\/kepler-app - reject-tinygif
 ^https?:\/\/m\.360buyimg\.com\/mobilecms\/s640x1136_jfs\/ - reject-tinygif
+# > 京东开屏广告（此条规则会影响京东比价显示，使其失效）
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject-dict
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/jd_json.js
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/jd_json.js
 # > 阿里巴巴
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv\/ - reject
 # > 京东极速版
