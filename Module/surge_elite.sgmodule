@@ -1,0 +1,51 @@
+#!name=A⁺ Surge精英版配置
+#!desc=更新时间:2022.09.19 18:05
+#!system=ios
+
+[General]
+# ＞ 隐藏vpn图标
+#hide-vpn-icon = true
+force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
+skip-proxy = %APPEND% iosapps.itunes.apple.com
+
+[Rule]
+DOMAIN,vv.video.qq.com,DIRECT
+DOMAIN-SUFFIX,store.apple.com,DIRECT
+# > WeChat
+AND,((OR,((DEST-PORT,443), (DEST-PORT,80), (DEST-PORT,8080))), (OR,((IP-CIDR,129.226.3.47/32,no-resolve), (IP-CIDR,101.32.118.25/16,no-resolve))), (PROTOCOL,TCP)),DIRECT
+DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN-SUFFIX,servicewechat.com,DIRECT
+DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+# Advertising 广告
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/Advertising.list,REJECT
+# WeChat
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/WeChat.list,DIRECT
+# China IP
+RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/ChinaIP.list,DIRECT
+
+[Script]
+#彩云天气 = type=cron,cronexp=0 7-23/2 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/caiyun.js,script-update-interval=0
+#type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/caiyun.js, require-body=false
+
+#取关店铺商品 = type=cron,cronexp=40 8-23/5 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_unsubscribe.js,script-update-interval=0
+
+京喜财富岛 = type=cron,cronexp=15 8-23/5 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/jd_cfd.js,script-update-interval=0
+
+京东极速版 = type=cron,cronexp=0 7,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_speed_sign.js,script-update-interval=0
+
+# > Sub-Store
+Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
+# > 腾讯视频
+http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
+# > 彩云天气
+#Rewrite: caiyun = type=http-request,pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/caiyun.js,requires-body=true,timeout=120
+# > 京东App 历史价格
+#京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/jd_price.js
+# > TestFlight区域限制解除
+TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,script-update-interval=-1,max-size=0,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/TF_Download.js
+# > WPS (By eHpo)
+Wps.js = requires-body=1,script-path=https://raw.githubusercontent.com/wwg135/master/Quantumult-X/task/WPS.js,type=http-response,pattern=^https://account.wps.*/api/users/
+
+[MITM]
+hostname = %APPEND% api.m.jd.com, account.wps.*, sub.store, *.video.qq.com, v.qq.com, -weather-data.apple.com, api.weather.com, account.wps.cn
