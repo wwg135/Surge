@@ -1,0 +1,112 @@
+#!name=B⁺⁺ 广告重写
+#!desc=更新时间:2022.09.06 7:45
+#!system=ios
+
+[MITM]
+hostname = %APPEND%  m*.amap.com, *.cp31.ott.cibntv.net, *.ott.cibntv.net, ups.youku.com, r.l.youku.com, m.youku.com, api.mobile.youku.com, ad.api.3g.youku.com, *.atm.youku.com,brace.qq.com, api2.helper.qq.com, *.beacon,qq.com, 3gimg.qq.com, *.gdt.qq.com, lives.l.qq.com, imgcache.qq.com, ssl.kohsocialapp.qq.com, qt.qq.com, *.l.qq.com, *.gtimg.cn, *.gtimg.com, iface.iqiyi.com, act.vip.iqiyi.com, intl.iqiyi.com, iface2.iqiyi.com, *.iqiyipic.com, static-s.iqiyi.com, msga.cupid.iqiyi.com, ssports.iqiyi.com, static.iqiyi.com, t7z.cupid.iqiyi.com, *.+tc.qq.com, news.l.qq.com, video.dispatch.tc.qq.com, wa.gtimg.com, *.tc.qq.com, m*.360buyimg.com, api.m.jd.com, union.click.jd.com, ms.jr.jd.com, img11.360buyimg.com, img14.360buyimg.com, support.you.163.com, testflight.apple.com
+
+[URL Rewrite]
+# > 高德地图
+^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ - reject
+^https?:\/\/m5\.amap\.com\/ws\/valueadded\/ - reject
+^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/ - reject
+# > 优酷
+^https?:\/\/vali\.cp31\.ott\.cibntv\.net\/youku - reject
+^https?:\/\/.+?\.ott\.cibntv\.net\/[\w\/-]+.mp4\?sid= - reject
+^https?:\/\/[\w-.]+\.ott\.cibntv\.net\/[\w\/-]+.mp4\?ccode=02010101 - reject
+^https?:\/\/[\w-.]+\.ott\.cibntv\.net\/[\w\/-]+.mp4\?sid= - reject
+^https?:\/\/ups\.youku\.com\/.*?needad=1& - reject
+^https?:\/\/r\.l\.youku\.com\/rec_at_click - reject-tinygif
+^https?:\/\/m\.youku\.com\/video\/libs\/iwt\.js - reject-tinygif
+^https?:\/\/api\.mobile\.youku\.com\/layout\/search\/hot\/word - reject-tinygif
+^https?:\/\/ad\.api\.3g\.youku\.com - reject-tinygif
+^https?:\/\/.+?\.atm\.youku\.com - reject
+^https?:\/\/(iyes|(api|hd)\.mobile)\.youku\.com\/(adv|common\/v3\/hudong\/new) - reject-tinygif
+^https?:\/\/[\s\S]*\/youku\/.*?\.mp4 - reject-tinygif
+^http:\/\/ems\.youku\.com\/imp\? - reject
+# > 腾讯广告
+^https?:\/\/btrace\.qq\.com - reject
+^https?:\/\/api2\.helper\.qq\.com\/game\/buttons - reject-tinygif
+^https?:\/\/\w+\.beacon\.qq\.com - reject
+^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg - reject
+^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= - reject-tinygif
+^https?:\/\/imgcache\.qq\.com\/qqlive\/ - reject-tinygif
+^https?:\/\/mtteve\.beacon\.qq\.com\/analytics - reject-tinygif
+^https?+:\/\/vv\.video\.qq\.com\/getvmind\? - reject
+^https?+:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons - reject
+^https?+:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info - reject
+^https?+:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/ - reject
+^https?+:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/ - reject
+^https?:\/\/.+?\.l\.qq\.com - reject
+^https?:\/\/\w+\.gdt\.qq\.com - reject
+^https?:\/\/y\.gtimg\.cn\/music\/.*?_Ad/\d+\.png - reject-tinygif
+^https?:\/\/splashqqlive\.gtimg\.com\/website\/\d{6} - reject-tinygif
+^https?:\/\/qzonestyle\.gtimg\.cn\/qzone\/biz\/gdt\/mob\/sdk\/ios\/v2\/ - reject-tinygif
+^https?:\/\/discuz\.gtimg\.cn\/cloud\/scripts\/discuz_tips\.js - reject-tinygif
+^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png - reject-tinygif
+^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qiantu\/upload\/ - reject-tinygif
+^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4} - reject-tinygif
+# > 爱奇艺
+^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
+^https?:\/\/intl\.iqiyi\.com\/ad_external\/ - reject
+^https?:\/\/intl\.iqiyi\.com\/video\/advertise - reject
+^https?:\/\/u\d\.iqiyipic\.com\/image\/[\w\/]+\/oad_ - reject
+^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do - reject
+^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show - reject
+^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
+^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/fusion_switch - reject-tinygif
+^http:\/\/.+\.iqiyipic\.com\/image\/.+\/ad\/.+\.jpg - reject
+^http:\/\/static-s\.iqiyi\.com\/common\/.+\/Small_video\/a2\/af\/.+\.png - reject
+^http:\/\/msga/.cupid/.iqiyi/.com\/scp2\.gif - reject
+https?:\/\/ssports\.iqiyi\.com/app\/ - reject
+https?:\/\/ssports\.iqiyi\.com/json\/shop\/shopInfo  - reject
+https?:\/\/.+\.iqiyi\.com\/videos\/other\/20$ - reject
+https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 - reject
+https?:\/\/static\.iqiyi\.com\/js\/common\/.+\.js - reject
+https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
+# > 腾讯视频
+^https://news.l.qq.com\/app\? - reject
+^https?:\/\/btrace.qq.com - reject
+^https?:\/\/vv\.video\.qq\.com\/getvmind\? - reject
+^http:\/\/.+/\?tk=9901afb195dcf9a34db6088a4a221dba38b3d980e4db86009f8a08be4d4099ee323f6e7f03b881db21133b1bf2ae5bc5 - reject
+^http:\/\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 - reject
+^http:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4 - reject
+^http:\/\/wa\.gtimg\.com\/adxcdn\/.+\.jpg - reject
+^https?:\/\/.+?\/omts.tc.qq.com\/ - reject
+^https?:\/\/.+?\/variety.tc.qq.com\/ - reject
+^https?:\/\/.+?\.tc\.qq\.com\/.+?_p20\d_ - reject
+^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\? - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+\.tc\.qq\.com\/.+p201\.1\.mp4\? - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004 - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+_p20\d - reject
+^https?:\/\/[\s\S]*\/.+?\.tc\.qq\.com/.*?p201.1\.mp4 - reject-tinygif
+^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 - reject
+# > 京东
+^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/202220\/24\/21575\/134711\/625b821bE5d642d73\/77636692989bd2be\.jpg - reject
+^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\/t1\/96405\/17\/28473\/168578\/625cd144E7997a990\/8233ce8a10c4e463\.jpg - reject
+^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\/t1\/182114\/23\/23904\/121433\/62593c9cEd77c4519\/2e3f4c518b771094\.jpg - reject
+^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs - reject
+^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/197429\/22/22400\/119193\/62562ef0Eff59b4d4 - reject
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ - reject-array
+^https?://union.click.jd.com/jda? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/jda?adblock=$2union.click.jd.com$3
+^https?://union.click.jd.com/sem.php? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/sem.php?adblock=$2union.click.jd.com$3
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/(aladdin\/na\/m\/getLoadingPicture|aladdin\/na\/m\/getLoadingPicture) - reject
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture - reject
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/(new)?na\/m\/adInfo - reject
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo - reject
+^https?:\/\/bdsp-x\.jd\.com\/adx\/ - reject
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start url script-response-body https://raw.githubusercontent.com/28413761/QX/main/JS/startup.js
+^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ - reject
+^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ - reject
+^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/197429\/22\/22400\/119193\/62562ef0Eff59b4d4 - reject
+^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/220846\/5\/16214\/41327 - reject
+^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/202818 - reject
+^https?:\/\/storage\.360buyimg\.com\/kepler-app - reject-tinygif
+^https?:\/\/m\.360buyimg\.com\/mobilecms\/s640x1136_jfs\/ - reject-tinygif
+# > 京东极速版
+^https:\/\/img11.360buyimg.com\/dl\/jfs\/t1\/195304\/29\/12317\/268480\/60e6fd21E02a8fb2a\/ - reject
+https://api.m.jd.com/client.action\?functionId=lite_advertising - reject
+# > 苹果TestFlight App更新时, 提示"APP不可用"问题. 解除区域限制.
+^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ url script-request-body https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js
