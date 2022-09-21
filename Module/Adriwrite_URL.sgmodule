@@ -64,6 +64,9 @@ https?:\/\/.+\.iqiyi\.com\/videos\/other\/20$ - reject
 https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 - reject
 https?:\/\/static\.iqiyi\.com\/js\/common\/.+\.js - reject
 https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
+^https?:\/\/.+\/cdn\/qiyiapp\/\d{8}\/.+&dis_dz= - reject-tinygif
+^https?:\/\/.+\/cdn\/qiyiapp\/\d{8}\/.+&z=\w - reject-tinygif
+^https?:\/\/.+\/videos\/other\/ - reject
 # > 腾讯视频
 ^https://news.l.qq.com\/app\? - reject
 ^https?:\/\/btrace.qq.com - reject
