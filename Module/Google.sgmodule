@@ -1,0 +1,10 @@
+#!name=Google Rewrite
+#!desc=更新时间：2022-09-21 16:39
+#!system=ios
+
+[URL Rewrite]
+^https?://(www.)?g.cn https://www.google.com 302
+^https?://(www.)?google.cn https://www.google.com 302
+
+[MITM]
+hostname = %APPEND% www.google.cn, www.g.cn
