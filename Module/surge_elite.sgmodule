@@ -38,7 +38,7 @@ cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scri
 # > 彩云天气
 #Rewrite: caiyun = type=http-request,pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/caiyun.js,requires-body=true,timeout=120
 # > 京东App 历史价格
-京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/jdjf_price.js
+京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/jd_price.js
 # > TestFlight区域限制解除
 TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,script-update-interval=-1,max-size=0,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/TF_Download.js
 # > WPS (By eHpo)
