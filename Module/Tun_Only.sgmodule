@@ -1,10 +1,10 @@
 #!name=Tun Only
-#!desc=更新时间:2022-09-21 16:27
+#!desc=更新时间:2022-09-22 19:02
 #!system=ios
 
 [General]
 compatibility-mode = 3
-force-http-engine-hosts = -<ip-address>, *
+force-http-engine-hosts = %APPEND% -<ip-address>, *
 
 [MITM]
 tcp-connection = true
