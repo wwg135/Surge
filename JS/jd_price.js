@@ -1,7 +1,7 @@
 /*
 Loon/Surge
 [Script]
-http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) requires-body=1,script-path=https://raw.githubusercontent.com/wwg135/master/Quantumult-X/task/jd_price_lite.js, tag=京东比价
+http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) requires-body=1,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/jd_price.js, tag=京东比价
 [MITM]
 hostname = api.m.jd.com
 
