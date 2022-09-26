@@ -1,5 +1,5 @@
-#!name=Get cookie
-#!desc=更新时间:2022-09-21 16:21
+#!name=Getcookie
+#!desc=更新时间:2022-09-26 14:51
 #!system=ios
 
 [Script]
@@ -17,5 +17,7 @@
 
 # 京东多合一签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/wwg135/master/Quantumult-X/task/JD_DailyBonus.js,script-update-interval=0
 
+获取腾讯视频Cookie = type=http-request,requires-body=1,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh, script-path=https://raw.githubusercontent.com/wwg135/Surge/main/videoqq.cookie.js
+
 [MITM]
-hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, wq.jd.com, m.jingxi.com, m.jd.com, passport.iqiyi.com
+hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, wq.jd.com, m.jingxi.com, m.jd.com, passport.iqiyi.com, *.video.qq.com, v.qq.com
