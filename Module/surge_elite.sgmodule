@@ -30,9 +30,6 @@ RULE-SET,https://raw.githubusercontent.com/wwg135/Surge/main/ChinaIP.list,DIRECT
 
 # > Boxjs
 Rewrite: BoxJs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/wwg135/Surge/main/boxjs/boxjs.js, requires-body=true, timeout=120
-# > 腾讯视频
-腾讯视频 = type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/wwg135/Surge/main/videoqq.cookie.js
-cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/wwg135/Surge/main/videoqq.js
 # > 京东App 历史价格
 京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/wwg135/Surge/main/JS/jd_price.js
 # > TestFlight区域限制解除
@@ -41,4 +38,4 @@ TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v
 Wps.js = requires-body=1,script-path=https://raw.githubusercontent.com/wwg135/master/Quantumult-X/task/WPS.js,type=http-response,pattern=^https://account.wps.*/api/users/
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, account.wps.*, *.video.qq.com, v.qq.com, account.wps.cn
+hostname = %APPEND% api.m.jd.com, account.wps.*, account.wps.cn
