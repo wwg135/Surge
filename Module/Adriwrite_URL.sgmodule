@@ -1,11 +1,14 @@
 #!name=广告重写
-#!desc=更新时间:2023-12-25 21:29
+#!desc=更新时间:2024-12-27 02:02
 #!system=ios
 
 [MITM]
-hostname = %APPEND%  m*.amap.com, *.cp31.ott.cibntv.net, *.ott.cibntv.net, ups.youku.com, r.l.youku.com, m.youku.com, api.mobile.youku.com, ad.api.3g.youku.com, *.atm.youku.com,brace.qq.com, api2.helper.qq.com, *.beacon,qq.com, 3gimg.qq.com, *.gdt.qq.com, lives.l.qq.com, imgcache.qq.com, ssl.kohsocialapp.qq.com, qt.qq.com, *.l.qq.com, *.gtimg.cn, *.gtimg.com, iface.iqiyi.com, act.vip.iqiyi.com, intl.iqiyi.com, iface2.iqiyi.com, *.iqiyipic.com, static-s.iqiyi.com, msga.cupid.iqiyi.com, ssports.iqiyi.com, static.iqiyi.com, t7z.cupid.iqiyi.com, *.+tc.qq.com, news.l.qq.com, video.dispatch.tc.qq.com, wa.gtimg.com, *.tc.qq.com, m*.360buyimg.com, api.m.jd.com, union.click.jd.com, ms.jr.jd.com, img11.360buyimg.com, img14.360buyimg.com, support.you.163.com, acs.m.taobao.com, testflight.apple.com
+hostname = %APPEND%  a.qiumibao.com, m*.amap.com, *.cp31.ott.cibntv.net, *.ott.cibntv.net, ups.youku.com, r.l.youku.com, m.youku.com, api.mobile.youku.com, ad.api.3g.youku.com, *.atm.youku.com,brace.qq.com, api2.helper.qq.com, *.beacon,qq.com, 3gimg.qq.com, *.gdt.qq.com, lives.l.qq.com, imgcache.qq.com, ssl.kohsocialapp.qq.com, qt.qq.com, *.l.qq.com, *.gtimg.cn, *.gtimg.com, iface.iqiyi.com, act.vip.iqiyi.com, intl.iqiyi.com, iface2.iqiyi.com, *.iqiyipic.com, static-s.iqiyi.com, msga.cupid.iqiyi.com, ssports.iqiyi.com, static.iqiyi.com, t7z.cupid.iqiyi.com, *.+tc.qq.com, news.l.qq.com, video.dispatch.tc.qq.com, wa.gtimg.com, *.tc.qq.com, m*.360buyimg.com, api.m.jd.com, union.click.jd.com, ms.jr.jd.com, img11.360buyimg.com, img14.360buyimg.com, support.you.163.com, acs.m.taobao.com, testflight.apple.com
 
 [URL Rewrite]
+# > 直播吧
+^https?:\/\/a\.qiumibao\.com\/activities\/config\.php - reject
+^https?:\/\/.+\/allOne\.php\?ad_name - reject
 # > 高德地图
 ^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ - reject
 ^https?:\/\/m5\.amap\.com\/ws\/valueadded\/ - reject
