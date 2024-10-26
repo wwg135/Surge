@@ -1,5 +1,5 @@
 #!name=广告重写
-#!desc=更新时间:2024-12-27 02:02
+#!desc=更新时间:2024-12-27 02:09
 #!system=ios
 
 [MITM]
@@ -9,6 +9,9 @@ hostname = %APPEND%  a.qiumibao.com, m*.amap.com, *.cp31.ott.cibntv.net, *.ott.c
 # > 直播吧
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php - reject
 ^https?:\/\/.+\/allOne\.php\?ad_name - reject
+https?:\/\/a\.qiumibao\.com\/activities\/config\.php$ url reject-200
+https?:\/\/a\.qiumibao\.com\/ios\/config\/\?version_code= url reject-200
+^https?:\/\/a\.qiumibao\.com\/activities\/config\.php url reject
 # > 高德地图
 ^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ - reject
 ^https?:\/\/m5\.amap\.com\/ws\/valueadded\/ - reject
